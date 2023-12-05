@@ -1,0 +1,223 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/*ESTILO GLOBAL (BODY)*/
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  
+}
+
+/* HEADER*/
+
+header {
+  grid-area: header;
+  background-color: rgb(32, 29, 29);
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0 20px;
+ 
+}
+
+header .headerLeft {
+  display: flex;
+  align-items: center;
+}
+
+.legend {
+  color: white;
+}
+
+nav { 
+  grid-area: nav;
+  background-color: black;
+
+}
+
+nav ul li {
+  list-style-type: none;
+  margin: 20px 30px;
+}
+
+nav ul a {
+  color: white;
+}
+
+/*MAIN*/
+
+ section {
+  
+  background-image: url(../img/correo.png);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  height: 100vh;
+  text-align: center;
+}
+
+#portadaContacto {
+  grid-area: section;
+  
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section .cardContacto {
+  padding-bottom: 10px;
+}
+
+section .cardInput {
+  padding-top: 10px;
+}
+
+.cardInput .textButton {
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.textBox {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    
+}
+
+.colorTextBox {
+  background-color: brown;
+  display: inline;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+/*FOOTER*/
+
+footer {
+  grid-area: footer;
+  background-color: rgb(141, 140, 138);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+footer span {
+  color: black;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+form p {
+  padding: 20px 0;
+  text-align: center;
+}
+.email {
+  width: 50vw;
+  display: flex;
+  
+}
+
+.ingreso {
+  width: 60% ; /*400px*/
+  height: 40px;
+  margin: 0 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+.btnAceptar {
+  width: 40% ; /*200px*/
+  height: 40px;
+  margin: 0 10px;
+  background-color: rgb(41, 78, 4);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+footer div iframe {
+  padding: 2%;
+}
+
+/*GRID*/
+body {
+  display: grid;
+  grid-template-areas: 
+  "header    header"
+  "nav       section"
+  "nav       section"
+  "footer    footer"
+  ;
+  grid-template-columns: 150px 1fr ;
+  grid-template-rows: 100px 1fr;
+}
+
+/*MEDIA QUERYS*/
+
+@media screen and (max-width: 768px) { 
+  
+  body {
+    grid-template-areas: 
+    "header"
+    "nav "
+    "section"
+    "footer"
+    ;
+    grid-template-columns:  1fr ;
+    grid-template-rows: 100px 100px 2fr 1fr;
+  }
+
+  nav ul {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+  }
+  
+}
+
+@media screen and (max-width: 480px) {
+  
+  body {
+    grid-template-areas: 
+    "header"
+    "nav "
+    "section"
+    "footer";
+    grid-template-columns:  1fr ;
+    grid-template-rows: 100px 300px 2fr 1fr;}
+  
+   body nav ul {
+    display: flex;
+    flex-direction: column;}
+
+    footer ul  {
+      display: flex;
+      justify-content: space-around;
+      padding-top: 7px;
+     }
+  
+     .email {
+      width: 100vw;
+    }
+    
+    .ingreso { 
+      margin: 0 5px;
+    }
+  
+    .finalText {
+      text-align: center;
+    }
+
+}
+
+
+  

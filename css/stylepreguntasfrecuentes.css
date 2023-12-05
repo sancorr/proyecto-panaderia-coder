@@ -1,0 +1,256 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  
+}
+
+/*ESTILO GLOBAL (BODY)*/
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* HEADER*/
+
+header {
+  background-color: rgb(32, 29, 29);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+header .headerLeft {
+  display: flex;
+  align-items: center;
+}
+
+header nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 20px 30px;
+}
+
+header nav ul a {
+  color: white;
+}
+
+.legend {
+  color: white;
+}
+/*MAIN*/
+
+#portadaPreguntas {
+  background-color: lightcyan;
+  color: black;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tittles {
+  padding-top: 3%;
+}
+
+#portadaPreguntas .cardsArticles {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  margin: 2%;
+  border-radius: 50px;
+  padding: 1%;
+  
+  
+}
+
+#articulosTutoriales {
+  background-color: rgb(177, 173, 166);
+  text-align: center;
+}
+
+#articulosTutoriales h2 {
+  padding-bottom: 10px;
+}
+
+#articulosTutoriales .tutorialesVideo {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/*FOOTER*/
+
+#pieDePagina {
+  background-color: rgb(141, 140, 138);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+form p {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.email {
+  width: 50vw;
+  display: flex;
+  
+}
+
+.ingreso {
+  width:  60%;
+  height: 40px;
+  margin: 0 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+.btnAceptar {
+  width: 40%;
+  height: 40px;
+  margin: 0 10px;
+  background-color: rgb(41, 78, 4);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+footer div iframe {
+  padding: 2%;
+}
+
+/*MEDIA QUERYS*/
+
+@media screen and (max-width: 1024px) {
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 7px;
+    font-size: small;
+  }
+  
+  #portadaPreguntas {
+    margin: 5% 0 0 ;
+  }
+
+  .tutorialesVideo {
+    padding: 2% 0;
+  }
+}
+
+.recetaUno{
+grid-area: uno;
+}
+
+.recetaDos{
+grid-area: dos;
+}
+
+.recetaTres{
+grid-area: tres;
+}
+
+@media  screen and (max-width: 768px) {
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #portadaPreguntas {
+    padding-top: 5%;
+  }
+
+
+  .gridContainer{
+    display: grid;
+    grid-template-areas: 
+    "uno dos"
+    "uno dos"
+    "uno tres"
+    ;
+    grid-template-columns: 350px 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+ nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ header nav ul li {
+  margin: 5px;
+  font-size: small;
+ }
+
+ #portadaPreguntas {
+  margin-top: 45%;
+  height: 200vh;
+ }
+
+ .tittles {
+  padding-top: 0;
+ }
+
+ .gridContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+ }
+
+ .gridContainer article p {
+  padding: 3%;
+ }
+
+ .tutorialesVideo iframe {
+  max-width: 90%;
+ padding-left: 5%;
+ margin-bottom: 10px;
+ }
+
+ .tutorialesVideo{
+  display: flex;
+  flex-direction: column;
+ 
+ }
+
+ footer ul  {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 7px;
+ }
+
+ .email {
+  width: 100vw;
+}
+
+.ingreso { 
+  margin: 0 5px;
+}
+
+.finalText {
+  text-align: center;
+}
+
+}
