@@ -185,10 +185,10 @@ footer div iframe {
 
 @media screen and (max-width: 1024px) {
   header {
-    display: flex;
+    /*display: flex;
     justify-content: space-between;
     flex-direction: row;
-    padding: 7px;
+    padding: 7px;*/
     font-size: small;
   }
 
