@@ -12,36 +12,40 @@ body {
 
 /* HEADER*/
 
-header {
+.navbar { 
   background-color: rgb(32, 29, 29);
-  position: fixed;
-  top: 0;
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  padding: 0 20px; 
+}
+.nav-link {
+  color: white;
+  margin: 0 15px;
+  
+}
+
+header {
+  
   grid-area: header;
 }
 
-header .headerLeft {
-  display: flex;
-  align-items: center;
-}
 
 .legend {
   color: white;
+  font-size: 1.5em;
+}
+
+/*header nav ul {
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 header nav ul li {
   list-style-type: none;
   display: inline-block;
-  margin: 20px 30px ; 
+  margin: 20px 30px;
 }
 
 header nav ul li a {
   color: white;
-}
+}*/
 
 /*MAIN*/
 
@@ -54,7 +58,6 @@ header nav ul li a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  
 }
 
 #portada .portadaRight {
@@ -74,6 +77,10 @@ header nav ul li a {
 
 #portada .portadaLeft h1 {
   font-size: 3rem;
+  margin-bottom: 0;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .tarjeta {
@@ -97,7 +104,6 @@ header nav ul li a {
 
 section {
   background-color: #788782;
- 
 }
 
 #servicios h2 {
@@ -112,7 +118,6 @@ section {
   justify-content: space-around;
   padding-bottom: 4%;
 }
-
 
 #servicios .servicios {
   width: 320px;
@@ -138,7 +143,6 @@ section {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  
 }
 
 footer ul {
@@ -153,11 +157,10 @@ form p {
 .email {
   width: 50vw;
   display: flex;
-  
 }
 
 .ingreso {
-  width: 60% ; /*400px*/
+  width: 60%; /*400px*/
   height: 40px;
   margin: 0 20px;
   border: none;
@@ -165,7 +168,7 @@ form p {
 }
 
 .btnAceptar {
-  width: 40% ; /*200px*/
+  width: 40%; /*200px*/
   height: 40px;
   margin: 0 10px;
   background-color: rgb(41, 78, 4);
@@ -187,7 +190,6 @@ footer div iframe {
     flex-direction: row;
     padding: 7px;
     font-size: small;
-  
   }
 
   main #portada {
@@ -196,8 +198,6 @@ footer div iframe {
     height: 160vh;
     justify-content: center;
     align-items: center;
-    
-    
   }
 
   #portada .portadaLeft {
@@ -214,14 +214,12 @@ footer div iframe {
     justify-content: space-around;
     align-items: stretch;
   }
-
 }
 
 @media screen and (max-width: 768px) {
   header {
     display: flex;
     flex-direction: column;
-  
   }
 
   header .headerLeft {
@@ -241,8 +239,6 @@ footer div iframe {
     height: 160vh;
     justify-content: center;
     align-items: center;
-    
-    
   }
 
   #portada .portadaLeft {
@@ -262,18 +258,15 @@ footer div iframe {
     width: 80%;
     padding: 1%;
   }
-
 }
 
 @media screen and (max-width: 320px) {
-
   /*Encabezado y navbar*/
   header {
     display: flex;
     flex-direction: column;
     padding: 0 2px;
     position: static;
-  
   }
 
   header .headerLeft {
@@ -289,12 +282,9 @@ footer div iframe {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    
   }
   header nav ul li {
-    margin: 5px ;
-    
+    margin: 5px;
   }
 
   /*Portada principal*/
@@ -305,24 +295,19 @@ footer div iframe {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    
-    
   }
 
   #portada .portadaLeft {
     width: 100%;
-    
   }
 
-   #portada .portadaLeft h1 {
+  #portada .portadaLeft h1 {
     font-size: 2rem;
-}
+  }
 
   .portadaLeft h2 {
     font-size: large;
   }
-
- 
 
   #portada .portadaRight {
     width: 90%;
@@ -339,17 +324,17 @@ footer div iframe {
   }
 
   /*Footer*/
-   footer ul  {
+  footer ul {
     display: flex;
     justify-content: space-around;
     padding-top: 7px;
-   }
+  }
 
-   .email {
+  .email {
     width: 100vw;
   }
-  
-  .ingreso { 
+
+  .ingreso {
     margin: 0 5px;
   }
 
