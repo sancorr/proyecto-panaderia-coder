@@ -12,34 +12,31 @@ body {
 
 /* HEADER*/
 
-header {
+.navbar { 
   background-color: rgb(32, 29, 29);
-  position: fixed;
-  top: 0px;
-  width: 100%;
+  padding: 0;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  padding: 0 20px;
+  flex-wrap: nowrap;
 }
 
-header .headerLeft {
-  display: flex;
-  align-items: center;
+.nav-link {
+  color: white;
+  margin: 0 15px;
+  
 }
 
-header nav ul li {
-  list-style-type: none;
-  display: inline-block;
-  margin: 20px 30px;
+.navbar-nav a {
+margin: 15px 20px;
+}
+
+.navbar-brand {
+  display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 .legend {
   color: white;
-}
-
-header nav ul a {
-  color: rgb(241, 235, 235);
 }
 
 /*MAIN*/
