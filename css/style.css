@@ -14,6 +14,7 @@ body {
 
 .navbar { 
   background-color: rgb(32, 29, 29);
+  padding: 0;
 }
 .nav-link {
   color: white;
@@ -21,6 +22,14 @@ body {
   
 }
 
+.navbar-nav a {
+margin: 20px 30px;
+}
+
+.navbar-brand {
+  padding: 0;
+  margin: 0;
+}
 header {
   
   grid-area: header;
@@ -30,6 +39,8 @@ header {
 .legend {
   color: white;
   font-size: 1.5em;
+  margin: 0;
+  
 }
 
 /*header nav ul {
@@ -265,8 +276,12 @@ footer div iframe {
   header {
     display: flex;
     flex-direction: column;
-    padding: 0 2px;
     position: static;
+  }
+
+  .container-fluid {
+    display: flex;
+    flex-wrap: nowrap;
   }
 
   header .headerLeft {
