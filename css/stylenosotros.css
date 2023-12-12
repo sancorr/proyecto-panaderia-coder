@@ -181,6 +181,13 @@ body {
   padding: 0 1%;
 }
 
+.cardSecundaryPage p {
+  margin: 0;
+} 
+
+.cardSecundaryPage h4 {
+  margin: 0;
+}
 
 /*FOOTER*/
 
@@ -246,13 +253,14 @@ form p {
 
 @media screen and (max-width: 768px) { 
 
-  header {
+  .navbar {
     font-size: medium;
     justify-content: center;
   }
 
+
   #secundaryPage {
-    height: 180vh;
+    height: 200vh;
     background-color: #788782;
   }
 
