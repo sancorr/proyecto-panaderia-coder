@@ -57,8 +57,7 @@ margin: 15px 20px;
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  
-  margin-top: 6%;
+  margin-top: 4%;
 }
 
 #portadaProductos .photos {
@@ -85,7 +84,7 @@ margin: 15px 20px;
 #articulosProductos {
   background-color: #788782;
   color: white;
-  height: 120vh;
+  height: 110vh;
   padding-top: 10px;
 }
 

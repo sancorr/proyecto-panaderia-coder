@@ -8,46 +8,50 @@
 /*ESTILO GLOBAL (BODY)*/
 
 body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Playfair Display", serif;
+  line-height: normal;
+  color: black;
+  
 }
-
 /* HEADER*/
 
-header {
+
+.navbar { 
   background-color: rgb(32, 29, 29);
-  position: fixed;
-  top: 0;
-  width: 100%;
+  padding: 0;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  padding: 0 20px;
+  flex-wrap: nowrap;
 }
-
-header .headerLeft {
-  display: flex;
-  align-items: center;
-}
-
-header nav ul li {
-  list-style-type: none;
-  display: inline-block;
-  margin: 20px 30px;
-}
-
-header nav ul a {
+.nav-link {
   color: white;
+  margin: 0 15px;
+  
 }
+
+.navbar-nav a {
+margin: 15px 20px;
+}
+
+.navbar-brand {
+  padding: 0;
+  margin: 0;
+}
+
 
 .legend {
   color: white;
+  font-size: 1.5em;
+  margin: 0;
+  
 }
+
+
 /*MAIN*/
 
 #portadaPreguntas {
   background-color: lightcyan;
   color: black;
-  height: 100vh;
+  height: 110vh;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -147,8 +151,25 @@ footer div iframe {
   }
   
   #portadaPreguntas {
-    margin: 5% 0 0 ;
+    margin: 4% 0 0 ;
   }
+
+  .tittles h1 {
+    margin: 0;
+  }
+
+  .tittles h2 {
+    margin: 0;
+  }
+
+  .cardsArticles h3 {
+    margin: 0;
+  }
+
+  .cardsArticles p {
+    margin: 0;
+  }
+
 
   .tutorialesVideo {
     padding: 2% 0;
@@ -177,6 +198,8 @@ grid-area: tres;
 
   #portadaPreguntas {
     padding-top: 5%;
+    height: 130vh;
+    margin: 0;
   }
 
 
@@ -205,8 +228,8 @@ grid-area: tres;
  }
 
  #portadaPreguntas {
-  margin-top: 45%;
-  height: 200vh;
+  
+  height: 240vh;
  }
 
  .tittles {
