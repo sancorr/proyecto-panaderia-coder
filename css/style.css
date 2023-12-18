@@ -39,6 +39,14 @@ body {
     
   }
 
+  .container-fluid div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  
+
 .legend {
   color: white;
   font-size: 1.5em;
@@ -189,6 +197,12 @@ footer div iframe {
   padding: 2%;
 }
 
+/*BOTON NAVBAR RESPOSIVE*/
+
+.navbar-toggler{
+  margin-left: auto;
+}
+
 /*MEDIA QUERYS*/
 
 @media screen and (max-width: 1024px) {
@@ -224,22 +238,35 @@ footer div iframe {
   }
 }
 
-@media screen and (max-width: 768px) {
-  header {
+@media screen and (max-width: 767px) {
+ .navbar-collapse {
+  margin: 0;
+ }
+
+  .container-fluid {
     display: flex;
     flex-direction: column;
   }
 
-  header .headerLeft {
+  .navbar-nav div {
+
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    align-items: start;
+
   }
 
-  header nav {
-    display: flex;
-    justify-content: space-evenly;
-  }
+   .ms-auto {
+    margin-left: 0!important;
+   }
+
+   .navbar-nav a {
+    margin: 0;
+   }
+   
+   .container {
+    max-width: none;
+}
 
   main #portada {
     display: flex;
