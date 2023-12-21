@@ -23,7 +23,6 @@ body {
   flex-wrap: nowrap;
 }
 
-
 .navbar-nav a {
   margin: 15px 20px;
   }
@@ -36,7 +35,6 @@ body {
   .nav-link {
     color: white;
     margin: 0 15px;
-    
   }
 
   .container-fluid div {
@@ -45,15 +43,11 @@ body {
     align-items: center;
   }
 
-  
-
 .legend {
   color: white;
   font-size: 1.5em;
   margin: 0;
-  
 }
-
 
 header {
   
@@ -176,7 +170,7 @@ form p {
 }
 
 .ingreso {
-  width: 60%; /*400px*/
+  width: 60%; 
   height: 40px;
   margin: 0 20px;
   border: none;
@@ -184,7 +178,7 @@ form p {
 }
 
 .btnAceptar {
-  width: 40%; /*200px*/
+  width: 40%; 
   height: 40px;
   margin: 0 10px;
   background-color: rgb(41, 78, 4);
@@ -216,8 +210,8 @@ footer div iframe {
 
   main #portada {
     display: flex;
-    flex-direction: column;
-    height: 160vh;
+    flex-direction: row;
+    height: 100vh;
     justify-content: center;
     align-items: center;
   }
@@ -239,6 +233,7 @@ footer div iframe {
 }
 
 @media screen and (max-width: 767px) {
+
  .navbar-collapse {
   margin: 0;
  }
@@ -249,11 +244,9 @@ footer div iframe {
   }
 
   .navbar-nav div {
-
     display: flex;
     flex-direction: column;
     align-items: start;
-
   }
 
    .ms-auto {
@@ -266,12 +259,12 @@ footer div iframe {
    
    .container {
     max-width: none;
-}
+   }
 
   main #portada {
     display: flex;
     flex-direction: column;
-    height: 160vh;
+    height: 140vh;
     justify-content: center;
     align-items: center;
   }

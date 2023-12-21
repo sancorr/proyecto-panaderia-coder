@@ -13,7 +13,9 @@ body {
   
 }
 
+
 /* HEADER*/
+
 .navbar {
   background-color: rgb(32, 29, 29);
   display: flex;
@@ -24,24 +26,21 @@ body {
 .navbar-nav a {
   margin: 15px 20px;
   }
+
+  .navbar-brand {
+    margin: 0;
+    padding: 0;
+  }
   
+  .nav-link {
+    margin: 15px;
+    color:white;
+  }
 
-.container-fluid a {
-  display: flex;
-  align-items: center;
-
-}
-
-.navbar-brand {
-  margin: 0;
-  padding: 0;
-}
-
-.nav-link {
-  margin: 15px;
-  color: rgb(241, 235, 235);
-}
-
+  .container-fluid div {
+    display: flex;
+    align-items: center;
+  }
 
 .legend {
   color: white;
@@ -63,16 +62,16 @@ body {
   align-items: center;
 }
 
-#frontPage .portadaLeft {
+#frontPage .portadaIzquierda {
   width: 50vw;
   text-align: center;
 }
 
-#frontPage .portadaRight {
+#frontPage .portadaDerecha {
   width: 50vw;
 }
 
-#frontPage .portadaRight img {
+#frontPage .portadaDerecha img {
   border-radius: 50px;
   width: 100%;
   padding: 2%;
@@ -237,6 +236,11 @@ form p {
   border-radius: 10px;
 }
 
+/*BOTON NAVBAR RESPOSIVE*/
+
+.navbar-toggler{
+  margin-left: auto;
+}
 
 /*MEDIA QUERYS*/
 
@@ -247,18 +251,39 @@ form p {
   }
 
   #secundaryPage {
-    height: 120vh;
+    height: 140vh;
   }
 } 
 
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 767px) { 
 
-  .navbar {
-    font-size: medium;
-    justify-content: center;
-  }
-
-
+  .navbar-collapse {
+    margin: 0;
+   }
+  
+    .container-fluid {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .navbar-nav div {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+    }
+  
+     .ms-auto {
+      margin-left: 0!important;
+     }
+  
+     .navbar-nav a {
+      margin: 0;
+     }
+     
+     .container {
+      max-width: none;
+     }
+     
   #secundaryPage {
     height: 200vh;
     background-color: #788782;
@@ -290,39 +315,7 @@ form p {
 
 
 @media screen and (max-width: 320px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    padding: 0 2px;
-    position: static;
   
-  }
-
-  header .headerLeft {
-    display: flex;
-    justify-content: center;
-  }
-
-  .headerLeft h2 {
-    font-size: large;
-  }
-
-  header nav {
-    font-size: small;
-  }
-
-  header nav ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    
-  }
-  header nav ul li {
-    margin: 5px ;
-
-  }
 
   main #frontPage {
     display: flex;
@@ -330,26 +323,26 @@ form p {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    
+    margin-top: 5%;
     
   }
 
-  #frontPage .portadaLeft {
+  #frontPage .portadaIzquierda {
     width: 100%;
     
   }
 
-   #frontPage .portadaLeft h1 {
+   #frontPage .portadaIzquierda h1 {
     font-size: 2rem;
 }
 
   
-  #frontPage .portadaRight {
+  #frontPage .portadaDerecha {
     width: 90%;
   }
 
   #secundaryPage {
-    height: 185vh;
+    height: 230vh;
   }
 
 
@@ -395,9 +388,6 @@ form p {
   .finalText {
     text-align: center;
   }
-
-
-
 
 }
   

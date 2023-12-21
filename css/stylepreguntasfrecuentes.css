@@ -14,22 +14,15 @@ body {
   
 }
 /* HEADER*/
-
-
 .navbar { 
   background-color: rgb(32, 29, 29);
   padding: 0;
   display: flex;
   flex-wrap: nowrap;
 }
-.nav-link {
-  color: white;
-  margin: 0 15px;
-  
-}
 
 .navbar-nav a {
-margin: 15px 20px;
+  margin: 15px 20px;
 }
 
 .navbar-brand {
@@ -37,12 +30,22 @@ margin: 15px 20px;
   margin: 0;
 }
 
+.nav-link {
+  color: white;
+    
+}
+
+
+.container-fluid div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
 .legend {
   color: white;
   font-size: 1.5em;
   margin: 0;
-  
 }
 
 
@@ -57,13 +60,14 @@ margin: 15px 20px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 5%;
 }
 
 .tittles {
   padding-top: 3%;
 }
 
-#portadaPreguntas .cardsArticles {
+#portadaPreguntas .cardsArticlesPreguntas {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -138,20 +142,43 @@ footer div iframe {
   padding: 2%;
 }
 
+/*BOTON NAVBAR RESPOSIVE*/
+
+.navbar-toggler{
+  margin-left: auto;
+}
+
+
 /*MEDIA QUERYS*/
 
 @media screen and (max-width: 1024px) {
 
-  header {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    padding: 7px;
-    font-size: small;
+  .navbar-collapse {
+    margin: 0;
   }
   
+  .container-fluid {
+   display: flex;
+   flex-direction: row;
+  }
+  
+  .ms-auto {
+   margin-left: 0!important;
+  }
+  
+  .navbar-nav a {
+   margin: 0;
+  }
+     
+  .container {
+   max-width: none;
+   display: flex;
+   align-items: center;
+  }
+
+  
   #portadaPreguntas {
-    margin: 4% 0 0 ;
+    height: 130vh;
   }
 
   .tittles h1 {
@@ -174,106 +201,109 @@ footer div iframe {
   .tutorialesVideo {
     padding: 2% 0;
   }
+
+
+ .recetaUno{
+ grid-area: uno;
+ }
+
+ .recetaDos{
+  grid-area: dos;
+ }
+
+ .recetaTres{
+ grid-area: tres;
+ }
 }
 
-.recetaUno{
-grid-area: uno;
-}
+@media  screen and (max-width: 767px) {
 
-.recetaDos{
-grid-area: dos;
-}
-
-.recetaTres{
-grid-area: tres;
-}
-
-@media  screen and (max-width: 768px) {
-
-  header {
+  .navbar-collapse {
+    margin: 0;
+  }
+  
+  .container-fluid {
     display: flex;
     flex-direction: column;
-    align-items: center;
+  }
+  
+  .ms-auto {
+   margin-left: 0!important;
+  }
+  
+  .navbar-nav a {
+   margin: 0;
+  }
+
+  
+ .navbar-nav div {
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+  }
+  
+     
+ .container {
+   max-width: none;
+   display: flex;
+   align-items: center;
   }
 
   #portadaPreguntas {
-    padding-top: 5%;
-    height: 130vh;
-    margin: 0;
-  }
-
-
-  .gridContainer{
-    display: grid;
-    grid-template-areas: 
-    "uno dos"
-    "uno dos"
-    "uno tres"
-    ;
-    grid-template-columns: 350px 1fr;
-    grid-template-rows: 1fr 1fr;
+   height: 140vh;
+   padding: 20% 0%;
   }
 
 }
 
 @media screen and (max-width: 320px) {
- nav ul {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- }
- header nav ul li {
-  margin: 5px;
-  font-size: small;
- }
 
  #portadaPreguntas {
-  
-  height: 240vh;
+  height: 260vh;
  }
 
  .tittles {
-  padding-top: 0;
+   padding-top: 0;
  }
 
  .gridContainer {
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
+   display: flex;
+   flex-direction: column;
+   max-width: 100%;
  }
 
  .gridContainer article p {
-  padding: 3%;
+   padding: 3%;
  }
 
  .tutorialesVideo iframe {
-  max-width: 90%;
- padding-left: 5%;
- margin-bottom: 10px;
+   max-width: 90%;
+   padding-left: 5%;
+   margin-bottom: 10px;
  }
 
  .tutorialesVideo{
-  display: flex;
-  flex-direction: column;
+   display: flex;
+   flex-direction: column;
  
  }
 
  footer ul  {
-  display: flex;
-  justify-content: space-around;
-  padding-top: 7px;
+   display: flex;
+   justify-content: space-around;
+   padding-top: 7px;
  }
 
  .email {
-  width: 100vw;
-}
+   width: 100vw;
+  }
 
-.ingreso { 
-  margin: 0 5px;
-}
+ .ingreso { 
+   margin: 0 5px;
+  }
 
-.finalText {
-  text-align: center;
-}
+ .finalText {
+   text-align: center;
+  }
 
 }

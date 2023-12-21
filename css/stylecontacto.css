@@ -7,45 +7,50 @@
 /*ESTILO GLOBAL (BODY)*/
 
 body {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Playfair Display", serif;
+  line-height: normal;
+  color: black;
   
 }
 
 /* HEADER*/
 
-header {
-  grid-area: header;
+.navbar { 
   background-color: rgb(32, 29, 29);
-  width: 100%;
+  padding: 0;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  padding: 0 20px;
- 
+  flex-wrap: nowrap;
 }
 
-header .headerLeft {
+.navbar-nav a {
+  margin: 15px 20px;
+  }
+
+
+.navbar-brand {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  color: white;
+    
+}
+
+.container-fluid div {
   display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
 .legend {
   color: white;
+  font-size: 1.5em;
+  margin: 0;
 }
 
-nav { 
-  grid-area: nav;
-  background-color: black;
-
-}
-
-nav ul li {
-  list-style-type: none;
-  margin: 20px 30px;
-}
-
-nav ul a {
-  color: white;
+header {
+  grid-area: header;
 }
 
 /*MAIN*/
@@ -54,7 +59,7 @@ nav ul a {
   
   background-image: url(../img/correo.png);
   background-repeat: no-repeat;
-  background-size: 70%;
+  background-size: 50%;
   background-position: center;
   height: 100vh;
   text-align: center;
@@ -148,74 +153,73 @@ footer div iframe {
   padding: 2%;
 }
 
-/*GRID*/
-body {
-  display: grid;
-  grid-template-areas: 
-  "header    header"
-  "nav       section"
-  "nav       section"
-  "footer    footer"
-  ;
-  grid-template-columns: 150px 1fr ;
-  grid-template-rows: 100px 1fr;
+/*BOTON NAVBAR RESPOSIVE*/
+
+.navbar-toggler{
+  margin-left: auto!important;
 }
 
 /*MEDIA QUERYS*/
 
-@media screen and (max-width: 768px) { 
+@media screen and (max-width: 767px) { 
+
+ .navbar-collapse {
+   margin: 0;
+  }
   
-  body {
-    grid-template-areas: 
-    "header"
-    "nav "
-    "section"
-    "footer"
-    ;
-    grid-template-columns:  1fr ;
-    grid-template-rows: 100px 100px 2fr 1fr;
+ .container-fluid {
+   display: flex;
+   flex-direction: column;
+  }
+  
+  .navbar-nav div {
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   font-size: smaller;
+  }
+  
+  .ms-auto {
+    margin-left: 0!important;
+  }
+  
+  .navbar-nav a {
+   margin: 0;
   }
 
-  nav ul {
-    text-align: center;
-    display: flex;
-    flex-direction: row;
+  .container {
+   max-width: none;
   }
   
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
   
-  body {
-    grid-template-areas: 
-    "header"
-    "nav "
-    "section"
-    "footer";
-    grid-template-columns:  1fr ;
-    grid-template-rows: 100px 300px 2fr 1fr;}
-  
-   body nav ul {
-    display: flex;
-    flex-direction: column;}
+ #portadaContacto {
+   margin-top: 10%;
+  }
 
-    footer ul  {
-      display: flex;
-      justify-content: space-around;
-      padding-top: 7px;
-     }
+  .textBox {
+    margin: 4% 0%;
+  }
+
+  footer ul  {
+   display: flex;
+   justify-content: space-around;
+   padding-top: 7px;
+  }
   
-     .email {
-      width: 100vw;
-    }
+  .email {
+   width: 100vw;
+  }
     
-    .ingreso { 
-      margin: 0 5px;
-    }
+  .ingreso { 
+   margin: 0 5px;
+  }
   
-    .finalText {
-      text-align: center;
-    }
+  .finalText {
+   text-align: center;
+  }
 
 }
 
