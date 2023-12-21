@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*BASE**/
 /*SELECTOR UNIVERSAL*/
 /*SELECTOR UNIVERSAL*/
 * {
@@ -15,6 +16,7 @@ body {
   color: black;
 }
 
+/*LAYOUT*/
 /*NAVBAR*/
 /* HEADER*/
 .navbar {
@@ -47,6 +49,77 @@ header {
   grid-area: header;
 }
 
+@media screen and (max-width: 1024px) {
+  header {
+    font-size: small;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container-fluid {
+    display: flex;
+    flex-direction: column;
+  }
+  .container-fluid .container {
+    max-width: none;
+  }
+  .container-fluid .navbar-collapse {
+    margin: 0;
+  }
+  .container-fluid .navbar-collapse .ms-auto {
+    margin-left: 0 !important;
+  }
+  .container-fluid .navbar-collapse .navbar-nav div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .container-fluid .navbar-collapse .navbar-nav div a {
+    margin: 0;
+  }
+}
+/*FOOTER*/
+#pieDePagina {
+  background-color: rgb(141, 140, 138);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  color: black;
+  line-height: normal;
+}
+#pieDePagina ul {
+  list-style-type: none;
+}
+#pieDePagina iframe {
+  padding: 2%;
+}
+#pieDePagina form p {
+  text-align: center;
+  padding: 20px 0;
+}
+#pieDePagina form .email {
+  width: 50vw;
+  display: flex;
+}
+#pieDePagina form .email .ingreso {
+  width: 60%;
+  height: 40px;
+  margin: 0 20px;
+  border: none;
+  border-radius: 10px;
+}
+#pieDePagina form .email .btnAceptar {
+  width: 40%;
+  height: 40px;
+  margin: 0 10px;
+  background-color: rgb(41, 78, 4);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+
+/*PAGES*/
+/*HOME*/
 /*MAIN*/
 /*PORTADA*/
 #portadaIndex {
@@ -57,34 +130,28 @@ header {
   justify-content: center;
   align-items: center;
 }
-
 #portadaIndex .portadaRight {
   width: 50vw;
 }
-
 #portadaIndex .portadaRight img {
   border-radius: 50px;
   width: 100%;
   padding: 2%;
 }
-
 #portadaIndex .portadaLeft {
   width: 50vw;
   text-align: center;
 }
-
 #portadaIndex .portadaLeft h1 {
   font-size: 3rem;
   margin-bottom: 0;
   font-weight: 400;
   line-height: normal;
 }
-
-.tarjeta {
+#portadaIndex .portadaLeft .tarjeta {
   color: black;
 }
-
-.buttom {
+#portadaIndex .portadaLeft .buttom {
   border-radius: 50px;
   border: 2px solid white;
   text-decoration: none;
@@ -97,17 +164,15 @@ header {
 }
 
 /*PORTADA SERVICIOS*/
-section {
+#servicios {
   background-color: #788782;
   color: black;
   line-height: normal;
 }
-
 #servicios h2 {
   text-align: center;
   padding-top: 4%;
 }
-
 #servicios .cardsServicios {
   display: flex;
   flex-direction: row;
@@ -115,8 +180,7 @@ section {
   justify-content: space-around;
   padding-bottom: 4%;
 }
-
-#servicios .servicios {
+#servicios .cardsServicios .servicios {
   width: 320px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
   margin-top: 50px;
@@ -124,75 +188,15 @@ section {
   border: 5px;
   text-align: center;
 }
-
-#servicios .servicios img {
+#servicios .cardsServicios .servicios img {
   border-radius: 50px;
   border: 5px;
   width: 100%;
 }
 
-/*FOOTER*/
-#pieDePagina {
-  background-color: rgb(141, 140, 138);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  color: black;
-  line-height: normal;
-}
-
-footer ul {
-  list-style-type: none;
-}
-
-form p {
-  text-align: center;
-  padding: 20px 0;
-}
-
-.email {
-  width: 50vw;
-  display: flex;
-}
-
-.ingreso {
-  width: 60%;
-  height: 40px;
-  margin: 0 20px;
-  border: none;
-  border-radius: 10px;
-}
-
-.btnAceptar {
-  width: 40%;
-  height: 40px;
-  margin: 0 10px;
-  background-color: rgb(41, 78, 4);
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-}
-
-footer div iframe {
-  padding: 2%;
-}
-
-/*BOTON NAVBAR RESPOSIVE*/
-.navbar-toggler {
-  margin-left: auto;
-}
-
 /*MEDIA QUERYS*/
 @media screen and (max-width: 1024px) {
-  header {
-    /*display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    padding: 7px;*/
-    font-size: small;
-  }
-  main #portadaIndex {
+  #portadaIndex {
     display: flex;
     flex-direction: row;
     height: 100vh;
@@ -213,28 +217,7 @@ footer div iframe {
   }
 }
 @media screen and (max-width: 767px) {
-  .navbar-collapse {
-    margin: 0;
-  }
-  .container-fluid {
-    display: flex;
-    flex-direction: column;
-  }
-  .navbar-nav div {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-  }
-  .ms-auto {
-    margin-left: 0 !important;
-  }
-  .navbar-nav a {
-    margin: 0;
-  }
-  .container {
-    max-width: none;
-  }
-  main #portadaIndex {
+  #portadaIndex {
     display: flex;
     flex-direction: column;
     height: 140vh;
@@ -251,11 +234,17 @@ footer div iframe {
     flex-direction: column;
     align-items: center;
   }
-  #servicios .servicios {
+  #servicios .cardsServicios .servicios {
     width: 80%;
     padding: 1%;
   }
 }
+/*BOTON RESPONSIVE PARA NAVBAR*/
+/*BOTON NAVBAR RESPOSIVE*/
+.navbar-toggler {
+  margin-left: auto;
+}
+
 @media screen and (max-width: 320px) {
   /*Encabezado y navbar*/
   header {

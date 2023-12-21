@@ -1,0 +1,47 @@
+#pieDePagina {
+  background-color: rgb(141, 140, 138);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  color: black;
+  line-height: normal;
+
+  ul {
+    list-style-type: none;
+  }
+
+  iframe {
+    padding: 2%;
+  }
+
+  form {
+    p {
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .email {
+      width: 50vw;
+      display: flex;
+
+      .ingreso {
+        width: 60%;
+        height: 40px;
+        margin: 0 20px;
+        border: none;
+        border-radius: 10px;
+      }
+
+      .btnAceptar {
+        width: 40%;
+        height: 40px;
+        margin: 0 10px;
+        background-color: rgb(41, 78, 4);
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+      }
+    }
+  }
+}
