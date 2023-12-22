@@ -7,27 +7,29 @@
   flex-wrap: nowrap;
 
   .container-fluid {
-    div {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-
-      .navbar-brand {
-        padding: 0;
-        margin: 0;
-      }
-
-      .legend {
-        color: white;
-        font-size: 1.5em;
-        margin: 0;
-      }
+    .navbar-brand {
+      padding: 0;
+      margin: 0;
     }
 
-    .nav-link {
+    .legend {
       color: white;
-      margin: 0 15px;
-      margin: 15px 20px;
+      font-size: 1.5em;
+      margin: 0;
+      display: contents;
+    }
+
+    .navbar-nav {
+      div {
+        display: flex;
+        align-items: center;
+
+        .nav-link {
+          color: white;
+          margin: 0 15px;
+          margin: 15px 20px;
+        }
+      }
     }
   }
 }
@@ -55,7 +57,7 @@ header {
       margin: 0;
 
       .ms-auto {
-        margin-left: 0!important;
+        margin-left: 0 !important;
       }
 
       .navbar-nav div {

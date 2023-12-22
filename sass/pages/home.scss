@@ -143,3 +143,43 @@
     }
   }
 }
+
+@media screen and (max-width: 320px) {
+  /*Portada principal*/
+
+  #portadaIndex {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    .portadaLeft {
+      width: 100%;
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: large;
+      }
+    }
+
+    .portadaRight {
+      width: 90%;
+    }
+  }
+
+  #servicios {
+    .cardsServicios {
+      flex-direction: column;
+      align-items: center;
+
+      .servicios {
+        width: 80%;
+        padding: 1%;
+      }
+    }
+  }
+}

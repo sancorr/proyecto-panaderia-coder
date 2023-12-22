@@ -25,21 +25,21 @@ body {
   display: flex;
   flex-wrap: nowrap;
 }
-.navbar .container-fluid div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.navbar .container-fluid div .navbar-brand {
+.navbar .container-fluid .navbar-brand {
   padding: 0;
   margin: 0;
 }
-.navbar .container-fluid div .legend {
+.navbar .container-fluid .legend {
   color: white;
   font-size: 1.5em;
   margin: 0;
+  display: contents;
 }
-.navbar .container-fluid .nav-link {
+.navbar .container-fluid .navbar-nav div {
+  display: flex;
+  align-items: center;
+}
+.navbar .container-fluid .navbar-nav div .nav-link {
   color: white;
   margin: 0 15px;
   margin: 15px 20px;
@@ -118,6 +118,23 @@ header {
   border-radius: 10px;
 }
 
+/*Footer home320px*/
+@media screen and (max-width: 320px) {
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 7px;
+  }
+  footer .email {
+    width: 100vw !important;
+  }
+  footer .email .ingreso {
+    margin: 0 5px;
+  }
+  footer .finalText {
+    text-align: center;
+  }
+}
 /*PAGES*/
 /*HOME*/
 /*MAIN*/
@@ -239,40 +256,9 @@ header {
     padding: 1%;
   }
 }
-/*BOTON RESPONSIVE PARA NAVBAR*/
-/*BOTON NAVBAR RESPOSIVE*/
-.navbar-toggler {
-  margin-left: auto;
-}
-
 @media screen and (max-width: 320px) {
-  /*Encabezado y navbar*/
-  header {
-    display: flex;
-    flex-direction: column;
-    position: static;
-  }
-  .container-fluid {
-    display: flex;
-    flex-wrap: nowrap;
-  }
-  header .headerLeft {
-    display: flex;
-  }
-  .headerLeft h2 {
-    font-size: large;
-  }
-  header nav ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  header nav ul li {
-    margin: 5px;
-  }
   /*Portada principal*/
-  main #portadaIndex {
+  #portadaIndex {
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -285,7 +271,7 @@ header {
   #portadaIndex .portadaLeft h1 {
     font-size: 2rem;
   }
-  .portadaLeft h2 {
+  #portadaIndex .portadaLeft h2 {
     font-size: large;
   }
   #portadaIndex .portadaRight {
@@ -295,27 +281,12 @@ header {
     flex-direction: column;
     align-items: center;
   }
-  #servicios .servicios {
+  #servicios .cardsServicios .servicios {
     width: 80%;
     padding: 1%;
   }
-  /*Footer*/
-  footer ul {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 7px;
-  }
-  .email {
-    width: 100vw;
-  }
-  .ingreso {
-    margin: 0 5px;
-  }
-  .finalText {
-    text-align: center;
-  }
 }
-/*-----CONTACTO-------*/
+/*CONTACTO*/
 /*MAIN*/
 #portadaContacto {
   background-image: url(../img/correo.png);
@@ -323,9 +294,6 @@ header {
   background-position: center;
   height: 100vh;
   text-align: center;
-}
-
-#portadaContacto {
   grid-area: section;
   color: black;
   display: flex;
@@ -333,112 +301,27 @@ header {
   justify-content: center;
   align-items: center;
 }
-
-.cardContacto {
+#portadaContacto .cardContacto {
   padding-bottom: 10px;
 }
-
-.cardInput {
+#portadaContacto .cardInput {
   padding-top: 10px;
 }
-
-.cardInput .textButton {
-  border-radius: 10px;
-  padding: 3px;
-}
-
-.textBox {
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-}
-
-.colorTextBox {
+#portadaContacto .cardInput .colorTextBox {
   background-color: brown;
   display: inline;
   border-radius: 20px;
   padding: 5px;
 }
-
-/*FOOTER*/
-footer {
-  grid-area: footer;
-  background-color: rgb(141, 140, 138);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-footer span {
-  color: black;
-}
-
-footer ul {
-  list-style-type: none;
-}
-
-form p {
-  padding: 20px 0;
-  text-align: center;
-}
-
-.email {
-  width: 50vw;
-  display: flex;
-}
-
-.ingreso {
-  width: 60%; /*400px*/
-  height: 40px;
-  margin: 0 20px;
-  border: none;
+#portadaContacto .cardInput .textBox {
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
 }
-
-.btnAceptar {
-  width: 40%; /*200px*/
-  height: 40px;
-  margin: 0 10px;
-  background-color: rgb(41, 78, 4);
-  color: #fff;
-  border: none;
+#portadaContacto .cardInput .textButton {
   border-radius: 10px;
+  padding: 3px;
 }
 
-footer div iframe {
-  padding: 2%;
-}
-
-/*BOTON NAVBAR RESPOSIVE*/
-.navbar-toggler {
-  margin-left: auto !important;
-}
-
-/*MEDIA QUERYS*/
-@media screen and (max-width: 767px) {
-  .navbar-collapse {
-    margin: 0;
-  }
-  .container-fluid {
-    display: flex;
-    flex-direction: column;
-  }
-  .navbar-nav div {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    font-size: smaller;
-  }
-  .ms-auto {
-    margin-left: 0 !important;
-  }
-  .navbar-nav a {
-    margin: 0;
-  }
-  .container {
-    max-width: none;
-  }
-}
 @media screen and (max-width: 320px) {
   #portadaContacto {
     background-position: center;
@@ -446,27 +329,14 @@ footer div iframe {
     background-repeat: repeat;
     margin-top: 10%;
   }
-  .cardContacto {
+  #portadaContacto .cardContacto {
     color: orangered;
   }
-  .textBox {
+  #portadaContacto .textBox {
     margin: 4% 0%;
   }
-  footer ul {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 7px;
-  }
-  .email {
-    width: 100vw;
-  }
-  .ingreso {
-    margin: 0 5px;
-  }
-  .finalText {
-    text-align: center;
-  }
 }
+/*NOSOTROS*/
 /*-----NOSOTROS-----*/
 /*MAIN*/
 #frontPage {
@@ -478,16 +348,13 @@ footer div iframe {
   justify-content: center;
   align-items: center;
 }
-
 #frontPage .portadaIzquierda {
   width: 50vw;
   text-align: center;
 }
-
 #frontPage .portadaDerecha {
   width: 50vw;
 }
-
 #frontPage .portadaDerecha img {
   border-radius: 50px;
   width: 100%;
@@ -498,8 +365,7 @@ footer div iframe {
   height: 115vh;
   background-color: #788782;
 }
-
-.cardArticles-1 {
+#secundaryPage .cardArticles-1 {
   grid-area: ellos;
   max-width: auto;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
@@ -509,14 +375,12 @@ footer div iframe {
   padding: 2%;
   text-align: center;
 }
-
-.cardArticles-1 h2 {
+#secundaryPage .cardArticles-1 h2 {
   font-weight: 600;
   line-height: normal;
   margin: 0;
 }
-
-.cardArticles-2 {
+#secundaryPage .cardArticles-2 {
   grid-area: mapa;
   width: auto;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
@@ -530,19 +394,16 @@ footer div iframe {
   text-align: center;
   padding: 2%;
 }
-
-.cardArticles-2 h2 {
+#secundaryPage .cardArticles-2 h2 {
   font-weight: 600;
   line-height: normal;
   margin: 0;
 }
-
-.cardArticles-2 iframe {
+#secundaryPage .cardArticles-2 iframe {
   padding: 5% 0;
   margin-bottom: 0;
 }
-
-.cardArticles-3 {
+#secundaryPage .cardArticles-3 {
   grid-area: años;
   max-width: auto;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
@@ -555,14 +416,12 @@ footer div iframe {
   font-weight: 600;
   line-height: normal;
 }
-
-.cardArticles-3 h2 {
+#secundaryPage .cardArticles-3 h2 {
   font-weight: 600;
   line-height: normal;
   margin: 0;
 }
-
-.cardArticles-4 {
+#secundaryPage .cardArticles-4 {
   grid-area: productos;
   max-width: auto;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
@@ -573,78 +432,16 @@ footer div iframe {
   padding: 2%;
   margin-bottom: 0;
 }
-
-.cardArticles-4 h2 {
+#secundaryPage .cardArticles-4 h2 {
   font-weight: 600;
   line-height: normal;
   margin: 0;
 }
-
-.cardSecundaryPage {
-  display: grid;
-  grid-template-areas: "ellos  productos productos" "ellos  años       mapa";
-  grid-template-columns: 300px 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 16px;
-  padding: 0 1%;
-}
-
-.cardSecundaryPage p {
+#secundaryPage p {
   margin: 0;
 }
-
-.cardSecundaryPage h4 {
+#secundaryPage h4 {
   margin: 0;
-}
-
-/*FOOTER*/
-#pieDePagina {
-  background-color: rgb(141, 140, 138);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-
-footer span {
-  color: black;
-}
-
-footer ul li {
-  list-style-type: none;
-}
-
-form p {
-  text-align: center;
-  padding: 20px 0;
-}
-
-.email {
-  width: 50vw;
-  display: flex;
-}
-
-.ingreso {
-  width: 60%;
-  height: 40px;
-  margin: 0 20px;
-  border: none;
-  border-radius: 10px;
-}
-
-.btnAceptar {
-  width: 40%;
-  height: 40px;
-  margin: 0 10px;
-  background-color: rgb(41, 78, 4);
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-}
-
-/*BOTON NAVBAR RESPOSIVE*/
-.navbar-toggler {
-  margin-left: auto;
 }
 
 /*MEDIA QUERYS*/
@@ -657,51 +454,30 @@ form p {
   }
 }
 @media screen and (max-width: 767px) {
-  .navbar-collapse {
-    margin: 0;
-  }
-  .container-fluid {
-    display: flex;
-    flex-direction: column;
-  }
-  .navbar-nav div {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-  }
-  .ms-auto {
-    margin-left: 0 !important;
-  }
-  .navbar-nav a {
-    margin: 0;
-  }
-  .container {
-    max-width: none;
-  }
   #secundaryPage {
     height: 200vh;
     background-color: #788782;
   }
-  .cardSecundaryPage {
+  #secundaryPage .cardSecundaryPage {
     display: flex;
     flex-direction: column;
     margin: 0 1%;
   }
-  .cardArticles-1 {
+  #secundaryPage .cardSecundaryPage .cardArticles-1 {
     padding: 0 1%;
   }
-  .cardArticles-2 {
+  #secundaryPage .cardSecundaryPage .cardArticles-2 {
     padding: 0 1%;
   }
-  .cardArticles-3 {
+  #secundaryPage .cardSecundaryPage .cardArticles-3 {
     padding: 0 1%;
   }
-  .cardArticles-4 {
+  #secundaryPage .cardSecundaryPage .cardArticles-4 {
     padding: 0 1%;
   }
 }
 @media screen and (max-width: 320px) {
-  main #frontPage {
+  #frontPage {
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -721,40 +497,42 @@ form p {
   #secundaryPage {
     height: 230vh;
   }
-  .cardArticles-2 iframe {
+  #secundaryPage .cardArticles-2 iframe {
     width: 150px;
     height: 150px;
   }
-  .cardArticles-4 img {
-    width: 50px;
-    height: 50px;
+  #secundaryPage .cardArticles-3 {
+    padding: 2%;
   }
-  .articleImg {
+  #secundaryPage .cardArticles-4 {
+    padding: 4% 0;
+  }
+  #secundaryPage .cardArticles-4 .articleImg {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
-  .cardArticles-3 {
-    padding: 2%;
-  }
-  .cardArticles-4 {
-    padding: 4% 0;
-  }
-  footer ul {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 7px;
-  }
-  .email {
-    width: 100vw;
-  }
-  .ingreso {
-    margin: 0 5px;
-  }
-  .finalText {
-    text-align: center;
+  #secundaryPage .cardArticles-4 .articleImg img {
+    width: 50px;
+    height: 50px;
   }
 }
+.cardSecundaryPage {
+  display: grid;
+  grid-template-areas: "ellos  productos productos" "ellos  años       mapa";
+  grid-template-columns: 300px 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
+  padding: 0 1%;
+}
+
+/*PRODUCTOS*/
+/*BOTON RESPONSIVE PARA NAVBAR*/
+/*BOTON NAVBAR RESPOSIVE*/
+.navbar-toggler {
+  margin-left: auto;
+}
+
 /*-----PRODUCTOS-----*/
 /*MAIN*/
 #portadaProductos {

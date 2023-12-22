@@ -1,0 +1,11 @@
+
+.cardSecundaryPage {
+    display: grid;
+    grid-template-areas:
+      "ellos  productos productos"
+      "ellos  años       mapa";
+    grid-template-columns: 300px 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 16px;
+    padding: 0 1%;
+}

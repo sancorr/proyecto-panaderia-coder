@@ -1,0 +1,59 @@
+/*MAIN*/
+
+#portadaContacto {
+  background-image: url(../img/correo.png);
+  background-size: 40%;
+  background-position: center;
+  height: 100vh;
+  text-align: center;
+  grid-area: section;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .cardContacto {
+    padding-bottom: 10px;
+  }
+
+  .cardInput {
+    padding-top: 10px;
+
+    .colorTextBox {
+      background-color: brown;
+      display: inline;
+      border-radius: 20px;
+      padding: 5px;
+    }
+
+    .textBox {
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+        rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+        rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    }
+
+    .textButton {
+      border-radius: 10px;
+      padding: 3px;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #portadaContacto {
+    background-position: center;
+    background-size: 90%;
+    background-repeat: repeat;
+    margin-top: 10%;
+
+    .cardContacto {
+      color: orangered;
+    }
+
+    .textBox {
+      margin: 4% 0%;
+    }
+  }
+}
