@@ -7,16 +7,18 @@
   flex-wrap: nowrap;
 
   .container-fluid {
-    .navbar-brand {
-      padding: 0;
-      margin: 0;
-    }
+    .container {
+      .navbar-brand {
+        padding: 0;
+        margin: 0;
+      }
 
-    .legend {
-      color: white;
-      font-size: 1.5em;
-      margin: 0;
-      display: contents;
+      .legend {
+        color: white;
+        font-size: 1.5em;
+        margin: 0;
+        display: contents;
+      }
     }
 
     .navbar-nav {

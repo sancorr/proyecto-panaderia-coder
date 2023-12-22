@@ -1,0 +1,132 @@
+#portadaPreguntas {
+  background-color: lightcyan;
+  color: black;
+  height: 110vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  padding-top: 5% 0%;
+
+  .tittles {
+    padding-top: 3%;
+  }
+
+  .cardsArticlesPreguntas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin: 2%;
+    border-radius: 50px;
+    padding: 1%;
+  }
+}
+
+#articulosTutoriales {
+  background-color: rgb(177, 173, 166);
+  text-align: center;
+
+  h2 {
+    padding-bottom: 10px;
+  }
+
+  .tutorialesVideo {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+/*MEDIA QUERYS*/
+
+@media screen and (max-width: 1024px) {
+  #portadaPreguntas {
+    height: 130vh;
+    margin-top: 4%;
+
+    .tittles {
+      h1 {
+        margin: 0;
+
+        h2 {
+          margin: 0;
+        }
+      }
+    }
+
+    .cardsArticlesPreguntas {
+      h3 {
+        margin: 0;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  #articulosTutoriales {
+    .tutorialesVideo {
+      padding: 2% 0;
+    }
+  }
+
+  .recetaUno {
+    grid-area: uno;
+  }
+
+  .recetaDos {
+    grid-area: dos;
+  }
+
+  .recetaTres {
+    grid-area: tres;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #portadaPreguntas {
+    height: 140vh;
+    padding: 20% 0%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #portadaPreguntas {
+    height: 260vh;
+
+    .tittles {
+      padding-top: 0;
+    }
+
+    .gridContainer {
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+
+      article {
+        p {
+          padding: 3%;
+        }
+      }
+    }
+  }
+
+  #articulosTutoriales {
+    .tutorialesVideo {
+      display: flex;
+      flex-direction: column;
+
+      iframe {
+        max-width: 90%;
+        padding-left: 5%;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
