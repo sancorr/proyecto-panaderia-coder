@@ -14,7 +14,7 @@
       }
 
       .legend {
-        color: white;
+        color: $color-enlaces;
         font-size: 1.5em;
         margin: 0;
         display: contents;
@@ -27,7 +27,7 @@
         align-items: center;
 
         .nav-link {
-          color: white;
+          color: $color-enlaces;
           margin: 0 15px;
           margin: 15px 20px;
         }

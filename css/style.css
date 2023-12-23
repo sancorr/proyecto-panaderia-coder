@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*VARIABLES*/
 /*BASE**/
 /*SELECTOR UNIVERSAL*/
 /*SELECTOR UNIVERSAL*/
@@ -136,9 +137,8 @@ header {
   }
 }
 /*PAGES*/
-
 /*HOME*/
-
+/*MAIN*/
 /*PORTADA*/
 #portadaIndex {
   background-color: rgb(122, 111, 111);
@@ -290,13 +290,14 @@ header {
 /*CONTACTO*/
 /*MAIN*/
 #portadaContacto {
-  background-image: url(../img/correo.png);
-  background-size: 40%;
+  background-image: url(../img/gmail-portadapng.webp);
+  background-repeat: no-repeat;
+  background-size: 100%;
   background-position: center;
   height: 100vh;
   text-align: center;
   grid-area: section;
-  color: black;
+  color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -309,7 +310,7 @@ header {
   padding-top: 10px;
 }
 #portadaContacto .cardInput .colorTextBox {
-  background-color: brown;
+  background-color: rgb(71, 70, 70);
   display: inline;
   border-radius: 20px;
   padding: 5px;
@@ -530,7 +531,7 @@ header {
 /*PRODUCTOS*/
 /*MAIN*/
 #portadaProductos {
-  background-color: rgb(141, 140, 138);
+  background-color: rgb(122, 111, 111);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -653,7 +654,7 @@ header {
 }
 /*PREGUNTAS FRECUENTES*/
 #portadaPreguntas {
-  background-color: lightcyan;
+  background-color: rgb(122, 111, 111);
   color: black;
   height: 110vh;
   text-align: center;
@@ -679,7 +680,7 @@ header {
 }
 
 #articulosTutoriales {
-  background-color: rgb(177, 173, 166);
+  background-color: #788782;
   text-align: center;
 }
 #articulosTutoriales h2 {

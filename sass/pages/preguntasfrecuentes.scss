@@ -1,5 +1,5 @@
 #portadaPreguntas {
-  background-color: lightcyan;
+  background-color: $background-color-portada;
   color: black;
   height: 110vh;
   text-align: center;
@@ -29,7 +29,7 @@
 }
 
 #articulosTutoriales {
-  background-color: rgb(177, 173, 166);
+  background-color: $background-color-portada-secundaria;
   text-align: center;
 
   h2 {

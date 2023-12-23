@@ -1,13 +1,14 @@
 /*MAIN*/
 
 #portadaContacto {
-  background-image: url(../img/correo.png);
-  background-size: 40%;
+  background-image: url(../img/gmail-portadapng.webp);
+  background-repeat: no-repeat;
+  background-size: 100%;
   background-position: center;
   height: 100vh;
   text-align: center;
   grid-area: section;
-  color: black;
+  color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,7 +22,7 @@
     padding-top: 10px;
 
     .colorTextBox {
-      background-color: brown;
+      background-color: rgb(71, 70, 70);
       display: inline;
       border-radius: 20px;
       padding: 5px;
