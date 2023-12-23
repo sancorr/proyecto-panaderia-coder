@@ -29,6 +29,7 @@
       margin-bottom: 0;
       font-weight: 400;
       line-height: normal;
+      font-family: $fuente-titulo;
     }
 
     .tarjeta {
@@ -46,6 +47,11 @@
       box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
         rgba(0, 0, 0, 0.22) 0px 10px 10px;
       margin-top: 5%;
+      transition: padding 2s;
+    }
+
+    .buttom:hover {
+      padding: 30px 50px;
     }
   }
 }
@@ -57,11 +63,19 @@
   color: black;
   line-height: normal;
 
-  h2 {
+  a {
     text-align: center;
-    padding-top: 4%;
+    text-decoration: none;
+    color: black;
+
+    h2 {
+      padding-top: 4%;
+      margin-bottom: 0;
+      font-family: $fuente-titulo;
+    }
   }
 
+  
   .cardsServicios {
     display: flex;
     flex-direction: row;
@@ -76,12 +90,18 @@
       border-radius: 50px;
       border: 5px;
       text-align: center;
+      transition: width 3s;
 
       img {
         border-radius: 50px;
         border: 5px;
         width: 100%;
       }
+    }
+
+    .servicios:hover {
+      width: 400px;
+      
     }
   }
 }

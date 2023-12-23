@@ -12,7 +12,7 @@
 /*tipogragia general*/
 /*ESTILO GLOBAL (BODY)*/
 body {
-  font-family: "Playfair Display", serif;
+  font-family: "Karla", sans-serif;
   line-height: normal;
   color: black;
 }
@@ -165,6 +165,7 @@ header {
   margin-bottom: 0;
   font-weight: 400;
   line-height: normal;
+  font-family: "Permanent Marker", cursive;
 }
 #portadaIndex .portadaLeft .tarjeta {
   color: black;
@@ -179,6 +180,10 @@ header {
   display: inline-block;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   margin-top: 5%;
+  transition: padding 2s;
+}
+#portadaIndex .portadaLeft .buttom:hover {
+  padding: 30px 50px;
 }
 
 /*PORTADA SERVICIOS*/
@@ -187,9 +192,15 @@ header {
   color: black;
   line-height: normal;
 }
-#servicios h2 {
+#servicios a {
   text-align: center;
+  text-decoration: none;
+  color: black;
+}
+#servicios a h2 {
   padding-top: 4%;
+  margin-bottom: 0;
+  font-family: "Permanent Marker", cursive;
 }
 #servicios .cardsServicios {
   display: flex;
@@ -205,11 +216,15 @@ header {
   border-radius: 50px;
   border: 5px;
   text-align: center;
+  transition: width 3s;
 }
 #servicios .cardsServicios .servicios img {
   border-radius: 50px;
   border: 5px;
   width: 100%;
+}
+#servicios .cardsServicios .servicios:hover {
+  width: 400px;
 }
 
 /*MEDIA QUERYS*/
@@ -354,6 +369,9 @@ header {
   width: 50vw;
   text-align: center;
 }
+#frontPage .portadaIzquierda h1 {
+  font-family: "Permanent Marker", cursive;
+}
 #frontPage .portadaDerecha {
   width: 50vw;
 }
@@ -376,6 +394,13 @@ header {
   margin-top: 30px;
   padding: 2%;
   text-align: center;
+}
+#secundaryPage .cardArticles-1 img {
+  width: 100px;
+  transition: width 2s;
+}
+#secundaryPage .cardArticles-1 img:hover {
+  width: 200px;
 }
 #secundaryPage .cardArticles-1 h2 {
   font-weight: 600;
@@ -433,6 +458,13 @@ header {
   text-align: center;
   padding: 2%;
   margin-bottom: 0;
+}
+#secundaryPage .cardArticles-4 img {
+  width: 200px;
+  transition: 3s;
+}
+#secundaryPage .cardArticles-4 img:hover {
+  width: 300px;
 }
 #secundaryPage .cardArticles-4 h2 {
   font-weight: 600;
@@ -541,6 +573,9 @@ header {
   margin-top: 4%;
   padding-top: 5%;
 }
+#portadaProductos h1 {
+  font-family: "Permanent Marker", cursive;
+}
 #portadaProductos .photos {
   display: flex;
   justify-content: space-between;
@@ -548,6 +583,11 @@ header {
 #portadaProductos .photos img {
   width: 30%;
   height: 80%;
+  transition: width, height 3s;
+}
+#portadaProductos .photos img:hover {
+  width: 70%;
+  height: 90%;
 }
 #portadaProductos h2 {
   margin-bottom: 0;
@@ -557,6 +597,12 @@ header {
   border-radius: 15px;
   color: white;
   padding: 10px;
+  transition: padding, color, background-color, 3s;
+}
+#portadaProductos .buttonRecetas:hover {
+  padding: 30px;
+  color: black;
+  background-color: rgb(15, 92, 88);
 }
 
 #articulosProductos {
@@ -565,9 +611,18 @@ header {
   height: 110vh;
   padding-top: 10px;
 }
-#articulosProductos h2 {
+#articulosProductos a {
+  color: white;
+  text-decoration: none;
+  transition: color 1s;
+}
+#articulosProductos a h2 {
   text-align: center;
   margin-bottom: 0;
+  font-family: "Permanent Marker", cursive;
+}
+#articulosProductos a:hover {
+  color: black;
 }
 #articulosProductos .articleContainer {
   display: flex;
@@ -580,12 +635,17 @@ header {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
   border-radius: 5px;
   padding: 2%;
+  transition: max-width, background-color, 5s;
 }
 #articulosProductos .articleContainer .cardArticles h3 {
   margin-bottom: 0;
 }
 #articulosProductos .articleContainer .cardArticles p {
   margin-bottom: 0;
+}
+#articulosProductos .articleContainer .cardArticles:hover {
+  max-width: 35%;
+  background-color: rgb(99, 92, 92);
 }
 
 /*MEDIA QUERYS*/
@@ -668,6 +728,9 @@ header {
 #portadaPreguntas .tittles {
   padding-top: 3%;
 }
+#portadaPreguntas .tittles h1 {
+  font-family: "Permanent Marker", cursive;
+}
 #portadaPreguntas .cardsArticlesPreguntas {
   display: flex;
   flex-direction: column;
@@ -683,8 +746,13 @@ header {
   background-color: #788782;
   text-align: center;
 }
-#articulosTutoriales h2 {
+#articulosTutoriales a {
+  color: black;
+  text-decoration: none;
+}
+#articulosTutoriales a h2 {
   padding-bottom: 10px;
+  font-family: "Permanent Marker", cursive;
 }
 #articulosTutoriales .tutorialesVideo {
   display: flex;

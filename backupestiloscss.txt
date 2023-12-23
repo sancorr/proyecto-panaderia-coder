@@ -1415,3 +1415,19 @@ footer div iframe {
   }
 
 }
+
+
+$color-enlaces: white;
+
+$background-color-footer:rgb(141, 140, 138);
+
+$background-color-portada: rgb(122, 111, 111);
+
+$background-color-portada-secundaria:#788782;
+
+
+body {
+ font-family: "Playfair Display", serif;
+ line-height: normal;
+ color: black;
+}
