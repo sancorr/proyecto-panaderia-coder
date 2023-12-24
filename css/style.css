@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*VARIABLES*/
+/*UTILS*/
 /*BASE**/
 /*SELECTOR UNIVERSAL*/
 /*SELECTOR UNIVERSAL*/
@@ -220,8 +220,8 @@ header {
 #servicios .cardsServicios {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-around;
+  align-items: stretch;
   padding-bottom: 4%;
 }
 #servicios .cardsServicios .servicios {
@@ -661,6 +661,7 @@ header {
 }
 #articulosProductos .articleContainer {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
   align-items: flex-start;
   margin-top: 25px;

@@ -1,0 +1,13 @@
+
+@mixin flex($direction, $content, $items) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $content;
+  align-items: $items;
+}
+//CONTACTO
+@mixin background-contacto ($repeat, $tamanio, $position) {
+  background-repeat:repeat;
+  background-size: 100%;
+  background-position: center;
+}

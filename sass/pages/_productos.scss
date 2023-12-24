@@ -13,10 +13,7 @@
     #bdc3c7
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
+  @include flex (column, space-evenly, center);
   text-align: center;
   margin-top: 4%;
   padding-top: 5%;
@@ -100,9 +97,7 @@
    
 
   .articleContainer {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    @include flex (row, space-evenly, flex-start);
     margin-top: 25px;
 
     .cardArticles {

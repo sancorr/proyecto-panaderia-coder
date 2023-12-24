@@ -2,17 +2,13 @@
 
 #portadaContacto {
   background-image: url(../img/gmail-portadapng.webp);
-  background-repeat:repeat;
-  background-size: 100%;
-  background-position: center;
+  @include background-contacto (repeat, tamanio, position);
   height: 100vh;
   text-align: center;
   grid-area: section;
   color: rgb(0, 0, 0);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex (column, center, center);
+  
 
   .cardContacto {
     padding-bottom: 10px;

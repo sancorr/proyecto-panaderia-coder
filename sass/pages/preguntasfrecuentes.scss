@@ -13,10 +13,7 @@
   color: black;
   height: 110vh;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include flex (column, center, center);
   margin-top: 5%;
   padding-top: 5% 0%;
 
