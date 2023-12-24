@@ -1,7 +1,17 @@
 /*MAIN*/
 
 #portadaProductos {
-  background-color: $background-color-portada;
+  background: #bdc3c7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c3e50,
+    #bdc3c7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c3e50,
+    #bdc3c7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -51,7 +61,17 @@
 }
 
 #articulosProductos {
-  background-color: $background-color-portada-secundaria;
+  background: #bdc3c7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c3e50,
+    #bdc3c7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c3e50,
+    #bdc3c7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
   height: 110vh;
   padding-top: 10px;
@@ -59,11 +79,18 @@
    a {
     color: white;
     text-decoration: none;
-    transition: color 1s;
+    transition: color 2s;
     h2 {
       text-align: center;
       margin-bottom: 0;
       font-family: $fuente-titulo;
+      transition: scale 2s;
+    }
+
+    h2:hover {
+
+      scale: 1.5;
+
     }
    }
 
