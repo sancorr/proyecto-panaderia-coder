@@ -163,13 +163,13 @@
   }
 
   #secundaryPage {
-    height: 140vh;
+    height: 200vh;
   }
 }
 
 @media screen and (max-width: 767px) {
   #secundaryPage {
-    height: 200vh;
+    height: 230vh;
     background-color: #788782;
 
     .cardSecundaryPage {
@@ -186,7 +186,7 @@
       }
 
       .cardArticles-3 {
-        padding: 0 1%;
+        padding: 1% 3%;
       }
 
       .cardArticles-4 {
@@ -200,7 +200,7 @@
   #frontPage {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 120vh;
     justify-content: center;
     align-items: center;
     margin-top: 5%;
@@ -219,7 +219,7 @@
   }
 
   #secundaryPage {
-    height: 230vh;
+    height: 280vh;
 
     .cardArticles-2 {
       iframe {
