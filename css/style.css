@@ -60,8 +60,8 @@ header {
 }
 
 @media screen and (max-width: 1024px) {
-  header {
-    font-size: small;
+  .navbar .container {
+    justify-content: center;
   }
 }
 @media screen and (max-width: 767px) {
@@ -127,8 +127,24 @@ header {
   border-radius: 10px;
 }
 
+@media screen and (max-width: 768px) {
+  footer ul {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 7px;
+  }
+  footer .email {
+    width: 50vw;
+  }
+  footer .email .ingreso {
+    margin: 0 5px;
+  }
+  footer .finalText {
+    text-align: center;
+  }
+}
 /*Footer home320px*/
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   footer ul {
     display: flex;
     justify-content: space-around;
@@ -163,7 +179,7 @@ header {
 }
 #portadaIndex .portadaRight img {
   border-radius: 50px;
-  width: 100%;
+  width: 90%;
   padding: 2%;
 }
 #portadaIndex .portadaLeft {
@@ -171,9 +187,9 @@ header {
   text-align: center;
 }
 #portadaIndex .portadaLeft h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 0;
-  font-weight: 400;
+  font-weight: normal;
   line-height: normal;
   font-family: "Permanent Marker", cursive;
 }
@@ -227,7 +243,7 @@ header {
   padding-bottom: 4%;
 }
 #servicios .cardsServicios .servicios {
-  width: 320px;
+  width: 25%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
   margin-top: 50px;
   border-radius: 50px;
@@ -244,7 +260,6 @@ header {
   width: 400px;
 }
 
-/*MEDIA QUERYS*/
 @media screen and (max-width: 1024px) {
   #portadaIndex {
     display: flex;
@@ -255,18 +270,20 @@ header {
   }
   #portadaIndex .portadaLeft {
     width: 90%;
-    padding-top: 10%;
   }
   #portadaIndex .portadaRight {
-    width: 70%;
+    width: 90%;
   }
   #servicios .cardsServicios {
     flex-direction: row;
     justify-content: space-around;
     align-items: stretch;
   }
+  #servicios .cardsServicios .servicios {
+    padding: 0 1%;
+  }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   #portadaIndex {
     display: flex;
     flex-direction: column;
@@ -289,7 +306,7 @@ header {
     padding: 1%;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   /*Portada principal*/
   #portadaIndex {
     display: flex;

@@ -61,18 +61,17 @@ header {
 }
 
 @media screen and (max-width: 1024px) {
-  header {
-    font-size: small;
+  .navbar {
+    .container {
+      justify-content: center;
+    }
   }
 }
 
 @media screen and (max-width: 767px) {
   .container-fluid {
-
     display: flex;
     flex-direction: column;
-
-    
 
     .navbar-collapse {
       margin: 0;

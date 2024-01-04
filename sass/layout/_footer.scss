@@ -56,9 +56,33 @@
   }
 }
 
+
+@media screen and (max-width: 768px) {
+  footer {
+    ul {
+      display: flex;
+      justify-content: space-around;
+      padding-top: 7px;
+    }
+
+    .email {
+      width: 50vw;
+
+      .ingreso {
+        margin: 0 5px;
+      }
+    }
+
+    .finalText {
+      text-align: center;
+    }
+  }
+}
+
+
 /*Footer home320px*/
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   footer {
     ul {
       display: flex;
