@@ -19,8 +19,15 @@
   flex-wrap: nowrap;
 
   .container-fluid {
+
+    .buttonToRight {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
     .container {
-      
+            
       .navbar-brand {
         padding: 0;
         margin: 0;
@@ -61,12 +68,11 @@ header {
 
 @media screen and (max-width: 767px) {
   .container-fluid {
+
     display: flex;
     flex-direction: column;
 
-    .container {
-      max-width: none;
-    }
+    
 
     .navbar-collapse {
       margin: 0;
