@@ -352,7 +352,7 @@ header {
   background-repeat: repeat;
   background-size: 100%;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
   grid-area: section;
   color: rgb(0, 0, 0);
@@ -360,12 +360,19 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 90px;
 }
 #portadaContacto .cardContacto {
   padding-bottom: 10px;
 }
 #portadaContacto .cardInput {
+  display: flex;
+  flex-direction: column;
   padding-top: 10px;
+}
+#portadaContacto .cardInput .caja {
+  width: 300px;
+  height: 200px;
 }
 #portadaContacto .cardInput .colorTextBox {
   background-color: rgb(71, 70, 70);
@@ -373,32 +380,38 @@ header {
   border-radius: 20px;
   padding: 5px;
 }
-#portadaContacto .cardInput .textBox {
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-}
 #portadaContacto .cardInput .textButton {
-  border-radius: 10px;
+  background-color: rgb(3, 96, 128);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  border-radius: 50px;
+  border: 2px solid white;
+  color: white;
   padding: 3px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   #portadaContacto {
     background-position: center;
     background-size: 100%;
     background-repeat: repeat;
-    height: 100vh;
+    min-height: 100vh;
+    padding-top: 90px;
+    padding-bottom: 30px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   #portadaContacto {
+    min-height: 100vh;
     background-position: center;
     background-size: 100%;
     background-repeat: repeat;
-    margin-top: 10%;
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-  #portadaContacto .cardContacto {
-    color: black;
+  #portadaContacto .caja {
+    padding: 0 10px;
   }
   #portadaContacto .textBox {
     margin: 4% 0%;
