@@ -39,6 +39,10 @@ body {
   padding: 0;
   margin: 0;
 }
+.navbar .container-fluid .container .navbar-brand img {
+  width: 70px;
+  border-radius: 40px;
+}
 .navbar .container-fluid .container .legend {
   color: white;
   font-size: 1.5em;
@@ -98,6 +102,11 @@ header {
 }
 #pieDePagina ul {
   list-style-type: none;
+}
+#pieDePagina ul li a img {
+  width: 40px;
+  margin: 10px 0;
+  border-radius: 5px;
 }
 #pieDePagina iframe {
   padding: 2%;
@@ -426,7 +435,8 @@ header {
 }
 
 #secundaryPage {
-  height: 115vh;
+  min-height: 115vh;
+  padding-bottom: 5%;
   background: #bdc3c7; /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -439,19 +449,29 @@ header {
   border: 5px;
   margin-top: 30px;
   padding: 2%;
-  text-align: center;
+  text-align: start;
 }
-#secundaryPage .cardArticles-1 img {
-  width: 100px;
+#secundaryPage .cardArticles-1 .imageContainer {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5%;
+}
+#secundaryPage .cardArticles-1 .imageContainer img {
+  width: 150px;
   transition: width 2s;
+  border-radius: 10px;
 }
-#secundaryPage .cardArticles-1 img:hover {
+#secundaryPage .cardArticles-1 .imageContainer img:hover {
   width: 200px;
 }
 #secundaryPage .cardArticles-1 h2 {
   font-weight: 600;
   line-height: normal;
   margin: 0;
+  text-align: center;
+}
+#secundaryPage .cardArticles-1 h3 {
+  text-align: center;
 }
 #secundaryPage .cardArticles-2 {
   grid-area: mapa;
@@ -483,16 +503,18 @@ header {
   border-radius: 50px;
   border: 5px;
   margin-top: 30px;
-  text-align: center;
+  text-align: start;
   padding: 2%;
   margin-bottom: 0;
-  font-weight: 600;
   line-height: normal;
 }
 #secundaryPage .cardArticles-3 h2 {
   font-weight: 600;
   line-height: normal;
   margin: 0;
+}
+#secundaryPage .cardArticles-3 p {
+  padding-top: 10%;
 }
 #secundaryPage .cardArticles-4 {
   grid-area: productos;
@@ -505,11 +527,17 @@ header {
   padding: 2%;
   margin-bottom: 0;
 }
-#secundaryPage .cardArticles-4 img {
+#secundaryPage .cardArticles-4 .articleImg {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 5%;
+}
+#secundaryPage .cardArticles-4 .articleImg img {
   width: 200px;
   transition: 3s;
+  border-radius: 10px;
 }
-#secundaryPage .cardArticles-4 img:hover {
+#secundaryPage .cardArticles-4 .articleImg img:hover {
   width: 300px;
 }
 #secundaryPage .cardArticles-4 h2 {
@@ -525,17 +553,10 @@ header {
 }
 
 /*MEDIA QUERYS*/
-@media screen and (max-width: 1024px) {
-  header {
-    font-size: small;
-  }
+@media screen and (max-width: 768px) {
   #secundaryPage {
-    height: 200vh;
-  }
-}
-@media screen and (max-width: 767px) {
-  #secundaryPage {
-    height: 230vh;
+    min-height: 100vh;
+    padding-bottom: 5%;
     background-color: #788782;
   }
   #secundaryPage .cardSecundaryPage {
@@ -543,8 +564,14 @@ header {
     flex-direction: column;
     margin: 0 1%;
   }
-  #secundaryPage .cardSecundaryPage .cardArticles-1 {
-    padding: 0 1%;
+  #secundaryPage .cardSecundaryPage .cardArticles-1 p {
+    padding: 3%;
+  }
+  #secundaryPage .cardSecundaryPage .cardArticles-1 .imageContainer img {
+    width: 250px;
+    height: 250px;
+    padding: 3%;
+    border-radius: 40px;
   }
   #secundaryPage .cardSecundaryPage .cardArticles-2 {
     padding: 0 1%;
@@ -553,17 +580,28 @@ header {
     padding: 1% 3%;
   }
   #secundaryPage .cardSecundaryPage .cardArticles-4 {
-    padding: 0 1%;
+    padding: 4% 0;
+  }
+  #secundaryPage .cardSecundaryPage .cardArticles-4 .articleImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  #secundaryPage .cardSecundaryPage .cardArticles-4 .articleImg img {
+    border-radius: 40px;
+    padding: 3%;
+    width: 45%;
+    height: 45%;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   #frontPage {
     display: flex;
     flex-direction: column;
-    height: 120vh;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 10%;
   }
   #frontPage .portadaIzquierda {
     width: 100%;
@@ -575,14 +613,26 @@ header {
     width: 90%;
   }
   #secundaryPage {
-    height: 280vh;
+    min-height: 100vh;
+  }
+  #secundaryPage .cardArticles-1 p {
+    padding: 3%;
+  }
+  #secundaryPage .cardArticles-1 .imageContainer img {
+    width: 150px !important;
+    height: 150px !important;
+    padding: 3%;
+    border-radius: 40px;
   }
   #secundaryPage .cardArticles-2 iframe {
     width: 150px;
     height: 150px;
   }
-  #secundaryPage .cardArticles-3 {
-    padding: 2%;
+  #secundaryPage .cardArticles-3 h2 {
+    text-align: center;
+  }
+  #secundaryPage .cardArticles-3 p {
+    padding: 3%;
   }
   #secundaryPage .cardArticles-4 {
     padding: 4% 0;
@@ -590,18 +640,20 @@ header {
   #secundaryPage .cardArticles-4 .articleImg {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
   }
   #secundaryPage .cardArticles-4 .articleImg img {
-    width: 50px;
-    height: 50px;
+    border-radius: 40px;
+    padding: 3%;
+    width: 150px !important;
+    height: 150px !important;
   }
 }
 .cardSecundaryPage {
   display: grid;
-  grid-template-areas: "ellos  productos productos" "ellos  años       mapa";
-  grid-template-columns: 300px 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "ellos      años" "ellos      ." "productos  mapa";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
   gap: 16px;
   padding: 0 1%;
 }
