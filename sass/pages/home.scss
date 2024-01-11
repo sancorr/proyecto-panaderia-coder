@@ -135,12 +135,12 @@
     align-items: center;
 
     .portadaLeft {
-      width: 90%;
+      width: 50vw;
       
     }
 
     .portadaRight {
-      width: 90%;
+      width: 50vw;
     }
   }
 
@@ -159,16 +159,17 @@
   #portadaIndex {
     display: flex;
     flex-direction: column;
-    height: 140vh;
+    min-height: 140vh;
     justify-content: center;
     align-items: center;
 
     .portadaLeft {
-      width: 100%;
+      width: 50vw;
     }
 
     .portadaRight {
-      width: 70%;
+      width: 50vw;
+      margin-left: 50px;
     }
   }
 
@@ -191,7 +192,7 @@
   #portadaIndex {
     display: flex;
     flex-direction: column;
-    height: 120vh;
+    min-height: 120vh;
     justify-content: center;
     align-items: center;
 
@@ -209,6 +210,7 @@
 
     .portadaRight {
       width: 90%;
+      margin-left: 40px;
     }
   }
 

@@ -13,12 +13,12 @@
     #bdc3c7
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 100vh;
-  @include flex (column, space-evenly, center);
+  @include flex(column, space-evenly, center);
   text-align: center;
   margin-top: 4%;
   padding-top: 5%;
 
-  h1 { 
+  h1 {
     font-family: $fuente-titulo;
   }
 
@@ -70,10 +70,10 @@
     #bdc3c7
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
-  height: 110vh;
+  min-height: 110vh;
   padding-top: 10px;
 
-   a {
+  a {
     color: white;
     text-decoration: none;
     transition: color 2s;
@@ -85,19 +85,16 @@
     }
 
     h2:hover {
-
       scale: 1.5;
-
     }
-   }
+  }
 
-   a:hover {
-    color:black
-   }
-   
+  a:hover {
+    color: black;
+  }
 
   .articleContainer {
-    @include flex (row, space-evenly, flex-start);
+    @include flex(row, space-evenly, stretch);
     margin-top: 25px;
 
     .cardArticles {
@@ -138,7 +135,7 @@
   }
 
   #articulosProductos {
-    height: 150vh;
+    min-height: 150vh;
 
     .cardArticles {
       flex-direction: row;
@@ -148,11 +145,11 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   #portadaProductos {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     justify-content: space-evenly;
     align-items: center;
 
@@ -165,7 +162,7 @@
   }
 
   #articulosProductos {
-    height: 170vh;
+    min-height: 200vh;
 
     .articleContainer {
       flex-direction: column;
@@ -181,25 +178,26 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 425px) {
   /*Portada principal*/
 
   #portadaProductos {
     padding-top: 10%;
-    height: 180vh;
+    min-height: 140vh;
 
-    div {
+    .photos {
       flex-direction: column;
       align-items: center;
-
-      .photos {
-        flex-direction: row;
-        justify-content: space-evenly;
+      padding-bottom: 30px;
+      
+      img {
+        margin: 10px 0;
       }
     }
   }
 
   .cardProductos {
+    
     form {
       div {
         display: flex;
@@ -209,6 +207,8 @@
   }
 
   #articulosProductos {
-    height: 280vh;
+    min-height: 260vh;
+    padding-bottom: 50px;
+    
   }
 }
