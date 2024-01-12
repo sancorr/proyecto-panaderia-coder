@@ -21,10 +21,8 @@ body {
 /*NAVBAR*/
 /* HEADER*/
 .navbar {
-  background: #bdc3c7; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #283b4e, #737779); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #212b35, #424446); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: black;
+  background: rgb(65, 40, 1);
+  background: linear-gradient(90deg, rgba(131, 95, 36, 0.998) 7%, rgb(156, 72, 3) 37%);
   line-height: normal;
   padding: 0;
   display: flex;
@@ -90,9 +88,8 @@ header {
 }
 /*FOOTER*/
 #pieDePagina {
-  background: #bdc3c7; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: rgb(65, 40, 1);
+  background: linear-gradient(90deg, rgba(131, 95, 36, 0.998) 7%, rgb(156, 72, 3) 37%);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -130,7 +127,7 @@ header {
   width: 40%;
   height: 40px;
   margin: 0 10px;
-  background-color: rgb(41, 78, 4);
+  background-color: rgb(46, 29, 1);
   color: #fff;
   border: none;
   border-radius: 10px;
@@ -174,10 +171,9 @@ header {
 /*MAIN*/
 /*PORTADA*/
 #portadaIndex {
-  background: #bdc3c7; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  height: 100vh;
+  background: rgb(145, 91, 2);
+  background: linear-gradient(90deg, rgba(145, 91, 2, 0.9976365546) 7%, rgb(227, 116, 24) 37%);
+  min-height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -209,7 +205,7 @@ header {
   border-radius: 50px;
   border: 2px solid white;
   text-decoration: none;
-  background-color: rgb(3, 96, 128);
+  background-color: rgb(46, 29, 1);
   color: white;
   padding: 15px 25px;
   display: inline-block;
@@ -222,50 +218,56 @@ header {
 }
 
 /*PORTADA SERVICIOS*/
-#servicios {
-  background: #bdc3c7; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+#serviciosPortada {
+  background: rgb(145, 91, 2);
+  background: linear-gradient(90deg, rgba(145, 91, 2, 0.9976365546) 7%, rgb(227, 116, 24) 37%);
   color: black;
   line-height: normal;
 }
-#servicios a {
+#serviciosPortada a {
   text-align: center;
   text-decoration: none;
   color: black;
 }
-#servicios a h2 {
+#serviciosPortada a h2 {
   padding-top: 4%;
   margin-bottom: 0;
   font-family: "Permanent Marker", cursive;
   transition: scale, color, 2s;
 }
-#servicios a h2:hover {
+#serviciosPortada a h2:hover {
   scale: 1.5;
   color: whitesmoke;
 }
-#servicios .cardsServicios {
+#serviciosPortada .cardsServicios {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: stretch;
   padding-bottom: 4%;
 }
-#servicios .cardsServicios .servicios {
+#serviciosPortada .cardsServicios .servicios {
   width: 25%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
   margin-top: 50px;
   border-radius: 50px;
   border: 5px;
-  text-align: center;
+  text-align: start;
+  padding: 10px;
   transition: width 3s;
 }
-#servicios .cardsServicios .servicios img {
+#serviciosPortada .cardsServicios .servicios h3 {
+  text-align: center;
+}
+#serviciosPortada .cardsServicios .servicios p {
+  padding-top: 10px;
+}
+#serviciosPortada .cardsServicios .servicios img {
   border-radius: 50px;
   border: 5px;
   width: 100%;
 }
-#servicios .cardsServicios .servicios:hover {
+#serviciosPortada .cardsServicios .servicios:hover {
   width: 400px;
 }
 
@@ -291,6 +293,9 @@ header {
   #servicios .cardsServicios .servicios {
     padding: 0 1%;
   }
+  #servicios .cardsServicios .servicios h3 {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 768px) {
   #portadaIndex {
@@ -313,7 +318,7 @@ header {
   }
   #servicios .cardsServicios .servicios {
     width: 80%;
-    padding: 1%;
+    padding: 10px;
   }
 }
 @media screen and (max-width: 425px) {
@@ -344,19 +349,16 @@ header {
   }
   #servicios .cardsServicios .servicios {
     width: 80%;
-    padding: 1%;
+    padding: 10px;
   }
 }
 /*CONTACTO*/
 /*MAIN*/
 #portadaContacto {
-  background-image: url(../img/gmail-portadapng.webp);
-  background-repeat: repeat;
-  background-size: 100%;
-  background-position: center;
+  background: rgb(145, 91, 2);
+  background: linear-gradient(90deg, rgba(145, 91, 2, 0.9976365546) 7%, rgb(227, 116, 24) 37%);
   min-height: 100vh;
   text-align: center;
-  grid-area: section;
   color: rgb(0, 0, 0);
   display: flex;
   flex-direction: column;
@@ -383,7 +385,7 @@ header {
   padding: 5px;
 }
 #portadaContacto .cardInput .textButton {
-  background-color: rgb(3, 96, 128);
+  background-color: rgb(46, 29, 1);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   border-radius: 50px;
   border: 2px solid white;
@@ -423,9 +425,8 @@ header {
 /*-----NOSOTROS-----*/
 /*MAIN*/
 #frontPage {
-  background: #bdc3c7; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: rgb(145, 91, 2);
+  background: linear-gradient(90deg, rgba(145, 91, 2, 0.9976365546) 7%, rgb(227, 116, 24) 37%);
   height: 100vh;
   text-align: center;
   display: flex;
@@ -450,11 +451,10 @@ header {
 }
 
 #secundaryPage {
+  background: rgb(145, 91, 2);
+  background: linear-gradient(90deg, rgba(145, 91, 2, 0.9976365546) 7%, rgb(227, 116, 24) 37%);
   min-height: 115vh;
   padding-bottom: 5%;
-  background: #bdc3c7; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 #secundaryPage .cardArticles-1 {
   grid-area: ellos;
@@ -676,10 +676,9 @@ header {
 /*PRODUCTOS*/
 /*MAIN*/
 #portadaProductos {
-  background: #bdc3c7; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  height: 100vh;
+  background: rgb(145, 91, 2);
+  background: linear-gradient(90deg, rgba(145, 91, 2, 0.9976365546) 7%, rgb(227, 116, 24) 37%);
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -708,7 +707,7 @@ header {
   margin-bottom: 0;
 }
 #portadaProductos .buttonRecetas {
-  background-color: green;
+  background-color: rgb(46, 29, 1);
   border-radius: 15px;
   color: white;
   padding: 10px;
@@ -717,19 +716,18 @@ header {
 #portadaProductos .buttonRecetas:hover {
   padding: 30px;
   color: black;
-  background-color: rgb(15, 92, 88);
+  background-color: rgb(145, 40, 2);
 }
 
 #articulosProductos {
-  background: #bdc3c7; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: white;
+  background: rgb(145, 91, 2);
+  background: linear-gradient(90deg, rgba(145, 91, 2, 0.9976365546) 7%, rgb(227, 116, 24) 37%);
+  color: black;
   min-height: 110vh;
   padding-top: 10px;
 }
 #articulosProductos a {
-  color: white;
+  color: black;
   text-decoration: none;
   transition: color 2s;
 }
@@ -741,9 +739,6 @@ header {
 }
 #articulosProductos a h2:hover {
   scale: 1.5;
-}
-#articulosProductos a:hover {
-  color: black;
 }
 #articulosProductos .articleContainer {
   display: flex;
@@ -767,7 +762,7 @@ header {
 }
 #articulosProductos .articleContainer .cardArticles:hover {
   max-width: 35%;
-  background-color: rgb(99, 92, 92);
+  background-color: rgb(134, 77, 11);
 }
 
 /*MEDIA QUERYS*/
@@ -838,9 +833,8 @@ header {
 }
 /*PREGUNTAS FRECUENTES*/
 #portadaPreguntas {
-  background: #bdc3c7; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: rgb(145, 91, 2);
+  background: linear-gradient(90deg, rgba(145, 91, 2, 0.9976365546) 7%, rgb(227, 116, 24) 37%);
   color: black;
   min-height: 130vh;
   text-align: center;
@@ -869,10 +863,8 @@ header {
 }
 
 #articulosTutoriales {
-  min-height: 50vh;
-  background: #bdc3c7; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: rgb(145, 91, 2);
+  background: linear-gradient(90deg, rgba(145, 91, 2, 0.9976365546) 7%, rgb(227, 116, 24) 37%);
   text-align: center;
 }
 #articulosTutoriales a {

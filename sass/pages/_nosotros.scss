@@ -2,17 +2,12 @@
 /*MAIN*/
 
 #frontPage {
-  background: #bdc3c7; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #2c3e50,
-    #bdc3c7
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: rgb(145, 91, 2);
   background: linear-gradient(
-    to right,
-    #2c3e50,
-    #bdc3c7
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    90deg,
+    rgba(145, 91, 2, 0.9976365546218487) 7%,
+    rgba(227, 116, 24, 1) 37%
+  );
   height: 100vh;
   text-align: center;
   @include flex(row, center, center);
@@ -37,19 +32,15 @@
 }
 
 #secundaryPage {
+  background: rgb(145, 91, 2);
+  background: linear-gradient(
+    90deg,
+    rgba(145, 91, 2, 0.9976365546218487) 7%,
+    rgba(227, 116, 24, 1) 37%
+  );
+
   min-height: 115vh;
   padding-bottom: 5%;
-  background: #bdc3c7; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #2c3e50,
-    #bdc3c7
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #2c3e50,
-    #bdc3c7
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   .cardArticles-1 {
     grid-area: ellos;

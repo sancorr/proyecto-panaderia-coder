@@ -1,15 +1,10 @@
 #pieDePagina {
-  background: #bdc3c7; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #2c3e50,
-    #bdc3c7
-  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: rgb(65, 40, 1);
   background: linear-gradient(
-    to right,
-    #2c3e50,
-    #bdc3c7
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    90deg,
+    rgba(131, 95, 36, 0.998) 7%,
+    rgb(156, 72, 3) 37%
+  );
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -57,7 +52,7 @@
         width: 40%;
         height: 40px;
         margin: 0 10px;
-        background-color: rgb(41, 78, 4);
+        background-color:$button-color;
         color: #fff;
         border: none;
         border-radius: 10px;
