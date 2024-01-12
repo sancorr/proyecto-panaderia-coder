@@ -22,14 +22,14 @@
     justify-content: space-between;
 
     img {
+      border-radius: 10px;
       width: 30%;
-      height: 80%;
-      transition: width, height 3s;
+      transition: width 3s;
     }
 
     img:hover {
-      width: 70%;
-      height: 90%;
+      width: 35%;
+      
     }
   }
 
@@ -46,8 +46,8 @@
   }
 
   .buttonRecetas:hover {
-    padding: 30px;
-    color: black;
+    padding: 15px;
+    color: rgb(182, 179, 179);
     background-color: rgb(145, 40, 2);
   }
 }
@@ -102,7 +102,7 @@
 
     .cardArticles:hover {
       max-width: 35%;
-      background-color: rgb(134, 77, 11);
+      background-color: rgb(168, 90, 1);
     }
   }
 }
@@ -114,9 +114,9 @@
     padding-top: 5%;
 
     .photos {
+      padding: 0 20px;
       img {
         width: 30%;
-        height: 80%;
       }
     }
   }
@@ -141,9 +141,9 @@
     align-items: center;
 
     .photos {
+      padding: 0 20px;
       img {
         width: 30%;
-        height: 80%;
       }
     }
   }
@@ -153,9 +153,12 @@
 
     .articleContainer {
       flex-direction: column;
+      align-items: center;
+      padding-bottom: 30px;
 
       .cardArticles {
-        max-width: fit-content;
+        max-width: 90%;
+        margin: 10px 0;
 
         h3 {
           text-align: center;
@@ -179,6 +182,7 @@
       
       img {
         margin: 10px 0;
+        width: 50%;
       }
     }
   }
@@ -195,7 +199,6 @@
 
   #articulosProductos {
     min-height: 260vh;
-    padding-bottom: 50px;
-    
+    padding-bottom: 50px;    
   }
 }
