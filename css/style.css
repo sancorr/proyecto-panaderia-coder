@@ -692,7 +692,7 @@ header {
 }
 #portadaProductos .photos {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 #portadaProductos .photos img {
   border-radius: 10px;
