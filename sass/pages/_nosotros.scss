@@ -22,7 +22,6 @@
 
   .portadaDerecha {
     width: 50vw;
-    
 
     img {
       border-radius: 50px;
@@ -83,15 +82,10 @@
 
   .cardArticles-2 {
     grid-area: mapa;
-    width: auto;
-    box-shadow: $sombra-articles;
-    border-radius: 50px;
-    border: 5px;
-    margin-top: 30px;
     @include flex(column, center, center);
     text-align: center;
-    padding: 2%;
-
+    @extend .cardArticles-1; 
+    
     h2 {
       font-weight: 600;
       line-height: normal;
@@ -106,16 +100,10 @@
 
   .cardArticles-3 {
     grid-area: años;
-    max-width: auto;
-    box-shadow: $sombra-articles;
-    border-radius: 50px;
-    border: 5px;
-    margin-top: 30px;
-    text-align: start;
-    padding: 2%;
     margin-bottom: 0;
     line-height: normal;
-
+    @extend .cardArticles-1;  
+    
     h2 {
       font-weight: 600;
       line-height: normal;
@@ -129,17 +117,11 @@
 
   .cardArticles-4 {
     grid-area: productos;
-    max-width: auto;
-    box-shadow: $sombra-articles;
-    border-radius: 50px;
-    border: 5px;
-    margin-top: 30px;
     text-align: center;
-    padding: 2%;
     margin-bottom: 0;
+    @extend .cardArticles-1;    
 
-    .articleImg{
-
+    .articleImg {
       display: flex;
       justify-content: space-evenly;
       padding-top: 5%;
@@ -149,11 +131,10 @@
         transition: 3s;
         border-radius: 10px;
       }
-  
+
       img:hover {
         width: 300px;
       }
-
     }
 
     h2 {
@@ -186,7 +167,7 @@
       padding-top: 90px;
     }
 
-    .portadaDerecha{
+    .portadaDerecha {
       width: 50vw;
       padding: 30px 0;
     }
@@ -247,11 +228,8 @@
 
 @media screen and (max-width: 425px) {
   #frontPage {
-    display: flex;
-    flex-direction: column;
+    @include flex (column, center, center);
     min-height: 100vh;
-    justify-content: center;
-    align-items: center;
     margin-top: 10%;
 
     .portadaIzquierda {
@@ -313,8 +291,8 @@
         img {
           border-radius: 40px;
           padding: 3%;
-          width: 150px!important;
-          height: 150px!important;
+          width: 150px !important;
+          height: 150px !important;
         }
       }
     }

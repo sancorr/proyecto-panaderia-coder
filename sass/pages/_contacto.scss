@@ -45,10 +45,7 @@
 
       .cardInput {
 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex (column, center, center);
 
         label {
           padding-bottom: 30px;
@@ -82,9 +79,6 @@
 
 @media screen and (max-width: 768px) {
   #portadaContacto {
-    background-position: center;
-    background-size: 100%;
-    background-repeat: repeat;
     min-height: 100vh;
     padding-top: 90px;
     padding-bottom: 30px;
@@ -98,9 +92,6 @@
 @media screen and (max-width: 425px) {
   #portadaContacto {
     min-height: 100vh;
-    background-position: center;
-    background-size: 100%;
-    background-repeat: repeat;
     padding-top: 90px;
     display: flex;
     flex-direction: column;

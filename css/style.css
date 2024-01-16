@@ -422,9 +422,6 @@ header {
 
 @media screen and (max-width: 768px) {
   #portadaContacto {
-    background-position: center;
-    background-size: 100%;
-    background-repeat: repeat;
     min-height: 100vh;
     padding-top: 90px;
     padding-bottom: 30px;
@@ -436,9 +433,6 @@ header {
 @media screen and (max-width: 425px) {
   #portadaContacto {
     min-height: 100vh;
-    background-position: center;
-    background-size: 100%;
-    background-repeat: repeat;
     padding-top: 90px;
     display: flex;
     flex-direction: column;
@@ -486,7 +480,7 @@ header {
   min-height: 115vh;
   padding-bottom: 5%;
 }
-#secundaryPage .cardArticles-1 {
+#secundaryPage .cardArticles-1, #secundaryPage .cardArticles-4, #secundaryPage .cardArticles-3, #secundaryPage .cardArticles-2 {
   grid-area: ellos;
   max-width: auto;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
@@ -496,41 +490,35 @@ header {
   padding: 2%;
   text-align: start;
 }
-#secundaryPage .cardArticles-1 .imageContainer {
+#secundaryPage .cardArticles-1 .imageContainer, #secundaryPage .cardArticles-4 .imageContainer, #secundaryPage .cardArticles-3 .imageContainer, #secundaryPage .cardArticles-2 .imageContainer {
   display: flex;
   justify-content: space-around;
   padding-top: 5%;
 }
-#secundaryPage .cardArticles-1 .imageContainer img {
+#secundaryPage .cardArticles-1 .imageContainer img, #secundaryPage .cardArticles-4 .imageContainer img, #secundaryPage .cardArticles-3 .imageContainer img, #secundaryPage .cardArticles-2 .imageContainer img {
   width: 150px;
   transition: width 2s;
   border-radius: 10px;
 }
-#secundaryPage .cardArticles-1 .imageContainer img:hover {
+#secundaryPage .cardArticles-1 .imageContainer img:hover, #secundaryPage .cardArticles-4 .imageContainer img:hover, #secundaryPage .cardArticles-3 .imageContainer img:hover, #secundaryPage .cardArticles-2 .imageContainer img:hover {
   width: 200px;
 }
-#secundaryPage .cardArticles-1 h2 {
+#secundaryPage .cardArticles-1 h2, #secundaryPage .cardArticles-4 h2, #secundaryPage .cardArticles-3 h2, #secundaryPage .cardArticles-2 h2 {
   font-weight: 600;
   line-height: normal;
   margin: 0;
   text-align: center;
 }
-#secundaryPage .cardArticles-1 h3 {
+#secundaryPage .cardArticles-1 h3, #secundaryPage .cardArticles-4 h3, #secundaryPage .cardArticles-3 h3, #secundaryPage .cardArticles-2 h3 {
   text-align: center;
 }
 #secundaryPage .cardArticles-2 {
   grid-area: mapa;
-  width: auto;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-  border-radius: 50px;
-  border: 5px;
-  margin-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 2%;
 }
 #secundaryPage .cardArticles-2 h2 {
   font-weight: 600;
@@ -543,13 +531,6 @@ header {
 }
 #secundaryPage .cardArticles-3 {
   grid-area: años;
-  max-width: auto;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-  border-radius: 50px;
-  border: 5px;
-  margin-top: 30px;
-  text-align: start;
-  padding: 2%;
   margin-bottom: 0;
   line-height: normal;
 }
@@ -563,13 +544,7 @@ header {
 }
 #secundaryPage .cardArticles-4 {
   grid-area: productos;
-  max-width: auto;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-  border-radius: 50px;
-  border: 5px;
-  margin-top: 30px;
   text-align: center;
-  padding: 2%;
   margin-bottom: 0;
 }
 #secundaryPage .cardArticles-4 .articleImg {
@@ -623,10 +598,10 @@ header {
     flex-direction: column;
     margin: 0 1%;
   }
-  #secundaryPage .cardSecundaryPage .cardArticles-1 p {
+  #secundaryPage .cardSecundaryPage .cardArticles-1 p, #secundaryPage .cardSecundaryPage .cardArticles-2 p, #secundaryPage .cardSecundaryPage .cardArticles-3 p, #secundaryPage .cardSecundaryPage .cardArticles-4 p {
     padding: 3%;
   }
-  #secundaryPage .cardSecundaryPage .cardArticles-1 .imageContainer img {
+  #secundaryPage .cardSecundaryPage .cardArticles-1 .imageContainer img, #secundaryPage .cardSecundaryPage .cardArticles-2 .imageContainer img, #secundaryPage .cardSecundaryPage .cardArticles-3 .imageContainer img, #secundaryPage .cardSecundaryPage .cardArticles-4 .imageContainer img {
     width: 250px;
     height: 250px;
     padding: 3%;
@@ -657,9 +632,9 @@ header {
   #frontPage {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
     margin-top: 10%;
   }
   #frontPage .portadaIzquierda {
@@ -674,10 +649,10 @@ header {
   #secundaryPage {
     min-height: 100vh;
   }
-  #secundaryPage .cardArticles-1 p {
+  #secundaryPage .cardArticles-1 p, #secundaryPage .cardArticles-2 p, #secundaryPage .cardArticles-3 p, #secundaryPage .cardArticles-4 p {
     padding: 3%;
   }
-  #secundaryPage .cardArticles-1 .imageContainer img {
+  #secundaryPage .cardArticles-1 .imageContainer img, #secundaryPage .cardArticles-2 .imageContainer img, #secundaryPage .cardArticles-3 .imageContainer img, #secundaryPage .cardArticles-4 .imageContainer img {
     width: 150px !important;
     height: 150px !important;
     padding: 3%;
@@ -823,8 +798,8 @@ header {
     min-height: 150vh;
   }
   #articulosProductos .cardArticles {
-    flex-direction: row;
-    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
     align-items: stretch;
   }
 }
