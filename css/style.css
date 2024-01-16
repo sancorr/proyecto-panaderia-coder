@@ -376,31 +376,48 @@ header {
   align-items: center;
   padding-top: 90px;
 }
-#portadaContacto .cardContacto {
-  padding-bottom: 10px;
+#portadaContacto .cardContacto h1 {
+  font-family: "Permanent Marker", cursive;
 }
-#portadaContacto .cardInput {
+#portadaContacto form .nombreApellido {
   display: flex;
   flex-direction: column;
-  padding-top: 10px;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 100vh;
+  min-width: 50vw;
+  margin: 30px 0;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  border-radius: 50px;
+  background: rgb(59, 37, 1);
+  background: linear-gradient(90deg, rgba(177, 110, 3, 0.998) 7%, rgb(150, 70, 4) 37%);
 }
-#portadaContacto .cardInput .caja {
-  width: 300px;
-  height: 200px;
-}
-#portadaContacto .cardInput .colorTextBox {
-  background-color: rgb(71, 70, 70);
-  display: inline;
-  border-radius: 20px;
+#portadaContacto form .nombreApellido .textBox {
+  border-radius: 10px;
   padding: 5px;
 }
-#portadaContacto .cardInput .textButton {
+#portadaContacto form .nombreApellido .cardInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#portadaContacto form .nombreApellido .cardInput label {
+  padding-bottom: 30px;
+}
+#portadaContacto form .nombreApellido .cardInput #cajaMotivo {
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  margin: 0 20px;
+}
+#portadaContacto form .nombreApellido .cardInput .textButton {
   background-color: rgb(46, 29, 1);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   border-radius: 50px;
   border: 2px solid white;
   color: white;
-  padding: 3px;
+  padding: 10px 90px;
+  margin-top: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -411,6 +428,9 @@ header {
     min-height: 100vh;
     padding-top: 90px;
     padding-bottom: 30px;
+  }
+  #portadaContacto #cajaMotivo {
+    margin: 0 200px;
   }
 }
 @media screen and (max-width: 425px) {

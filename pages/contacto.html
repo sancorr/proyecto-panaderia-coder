@@ -41,10 +41,13 @@
             <div class="container-fluid ">
 
                 <div class="container buttonToRight">
-                    
+
                     <div class="buttonToRight">
-                        <div><a class="navbar-brand" href="../index.html"><img src="../img/logoPanaderia.jpg" alt="logo principal panaderia"></a></div>
-                        <div><p class="legend">Estela Mary</p></div>
+                        <div><a class="navbar-brand" href="../index.html"><img src="../img/logoPanaderia.jpg"
+                                    alt="logo principal panaderia"></a></div>
+                        <div>
+                            <p class="legend">Estela Mary</p>
+                        </div>
                     </div>
 
                     <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
@@ -84,34 +87,35 @@
 
         <form>
 
-            <div>
+            <div class="nombreApellido">
 
-                <label class="colorTextBox" for="nombre">Nombre:</label>
-                <input class="textBox" id="nombre" type="text">
+                <div>
+                    <label class="colorTextBox" for="nombre">Nombre:</label>
+                    <input class="textBox" id="nombre" type="text">
+                </div>
 
-                <br><br>
+                <div>
+                    <label class="colorTextBox" for="apellido">Apellido:</label>
+                    <input class="textBox" id="apellido" type="text">
+                </div>
 
-                <label class="colorTextBox" for="apellido">Apellido:</label>
-                <input class="textBox" id="apellido" type="text">
+                <div>
+                    <label for="emailBox">Tu E-mail</label>
+                    <input class="textBox" placeholder="Tu E-mail" type="email" id="emailBox">
+                </div>
+
+                <div class="cardInput">
+
+                    <label for="cajaMotivo">Motivo de tu consulta</label>
+                    <textarea name="" id="cajaMotivo" cols="30" rows="10"></textarea>                    
+                    <input class="textButton" type="submit">
+    
+                </div>
 
 
             </div>
 
-            <br>
-
-           <div>
-            <label for="emailBox">Tu E-mail</label>
-            <input class="textBox" placeholder="Tu E-mail" type="email" id="emailBox">
-           </div>
-
-            <div class="cardInput">
-                
-                <label for="cajaMotivo">Motivo de tu consulta</label>
-                <input class="caja" type="text" id="cajaMotivo">  
-                <br>
-                <input class="textButton" type="submit">
-
-            </div>
+            
 
         </form>
 
